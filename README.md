@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# apprologic.de – Webseite
 
-## Getting Started
+Next.js-Projekt für die neue ApproLogic-Webseite. Alle Texte liegen als Markdown-Dateien in `content/pages`, die Seitenstruktur in `content/site.ts`. Der Build erzeugt statische HTML-Dateien, die auf jedem Webserver laufen.
 
-First, run the development server:
+## Texte ändern
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+| Was | Wo |
+| --- | --- |
+| Text einer Seite | `content/pages/<pfad>.md` – Dateipfad = URL, z. B. `content/pages/funktionen/wartung.md` → `/funktionen/wartung/` |
+| Startseite | `content/pages/index.md` |
+| Titel, Einleitung, Brotkrumen, Vor/Zurück | Frontmatter oben in der jeweiligen `.md`-Datei |
+| Hauptnavigation, Untermenüs, Fußzeile | `content/site.ts` |
+| Adresse, Telefon, E-Mail, CTA-Beschriftung | `content/site.ts` (`site`) |
+
+### Frontmatter einer Seite
+
+```yaml
+---
+title: "Überschrift der Seite (H1 und Browser-Titel)"
+eyebrow: "Kleine Zeile über der Überschrift"       # optional
+lead: "Einleitungstext unter der Überschrift"       # optional, dient auch als Meta-Beschreibung
+description: "Eigene Meta-Beschreibung"             # optional
+section: "funktionen"                                # markiert den aktiven Hauptmenüpunkt
+breadcrumbs: [{ label: "Funktionen", href: "/funktionen/" }, { label: "Wartung", href: "" }]
+prev: { label: "Serviceanfragen", href: "/funktionen/serviceanfragen/" }   # optional
+next: { label: "Ersatzteile", href: "/funktionen/ersatzteile/" }           # optional
+---
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Eigene Blöcke im Markdown
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Neben normalem Markdown (Überschriften `##`, Listen, Tabellen, Links) gibt es fünf Blöcke als Code-Fences:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+````markdown
+```tiles
+Titel der ersten Kachel
+Text der Kachel, beliebig lang.
+-> /funktionen/ Linktext           (optional: macht die Kachel klickbar)
 
-## Learn More
+Titel der zweiten Kachel
+Text.
+```
 
-To learn more about Next.js, take a look at the following resources:
+```numbers
+−20 % | Erläuterung zur Zahl
+−30 % | Erläuterung zur Zahl
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```cta
+Überschrift des Abschlussblocks
+Optionaler Text.
+-> /kontakt/ Demo anfragen          (erster Link = primärer Button)
+-> /funktionen/ Funktionen ansehen
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```image
+Beschreibung des Bildes (Platzhalter, bis echte Bilder eingebaut sind)
+```
 
-## Deploy on Vercel
+```form
+```
+````
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Entwickeln und bauen
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # statischer Export nach ./out
+```
+
+Der Inhalt von `out/` wird auf den Webserver kopiert. Interne Links enden mit `/` (`trailingSlash`), damit die Ordnerstruktur ohne Rewrites funktioniert.
+
+## Noch offen
+
+- Kontaktformular: Endpunkt in `components/ContactForm.tsx` eintragen (z. B. Formspark, Web3Forms oder eigene API); beim statischen Export gibt es kein Backend.
+- Impressum und Datenschutz von der bestehenden Seite übernehmen.
+- Bilder und Screenshots einbauen (`image`-Blöcke ersetzen; Dateien nach `public/`).
+- Design: `app/globals.css` enthält nur Platzhalter-Styles.
+- Englische Version: zweiter Inhaltsbaum, z. B. `content/pages/en/…`, plus Sprachumschalter.

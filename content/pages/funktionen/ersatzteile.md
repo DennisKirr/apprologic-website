@@ -1,0 +1,29 @@
+---
+title: "Das richtige Teil beim ersten Mal, direkt aus der Explosionszeichnung in den Warenkorb."
+eyebrow: "Ersatzteile und Warenkorb"
+lead: "Falsch bestellte Teile kosten doppelt: Versand, Zeit, ein zweiter Stillstand. Ursache ist fast immer die Identifikation am Telefon."
+section: "funktionen"
+breadcrumbs: [{ label: "Funktionen", href: "/funktionen/" }, { label: "Ersatzteile und Warenkorb", href: "" }]
+prev: { label: "Wartung", href: "/funktionen/wartung/" }
+next: { label: "IoT und Reporting", href: "/funktionen/iot-reporting/" }
+---
+
+## Was das Modul tut
+
+Pro Maschine stehen Teilelisten und interaktive Explosionszeichnungen bereit; Position in der Zeichnung und Zeile in der Liste markieren sich gegenseitig. Suche nach Teilenummer, Benennung oder Seriennummer, Navigation durch Baugruppen, Verwendungsnachweis („verbaut in“). Bilder und Dokumente je Bauteil.
+
+Der Warenkorb sammelt Positionen über mehrere Baugruppen und Sitzungen, auch offline. Die Bestellung geht per E-Mail, als Bedarfsanforderung ins ERP oder an Ihren Webshop; der Kunde wird dort erkannt, Preise und Verfügbarkeit bleiben, wo sie sind.
+
+```image
+Explosionszeichnung mit Teileliste; Teiledetail mit „Zum Warenkorb hinzufügen“
+```
+
+## Datenquelle
+
+Katalog- und Grafikdaten kommen aus Ihrem führenden System (z. B. Quanos PartsPublisher) und werden regelmäßig aktualisiert. Handling und Anmutung bleiben vertraut. [Zu den Schnittstellen →](/integration/schnittstellen/)
+
+```cta
+Sie möchten Ihren Teilekatalog im Portal sehen?
+Wir zeigen es Ihnen in 30 Minuten.
+-> /kontakt/ Demo anfragen
+```
