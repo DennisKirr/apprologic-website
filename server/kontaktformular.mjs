@@ -7,7 +7,7 @@
  *
  * Konfiguration über Umgebungsvariablen (auf dem Server in /etc/apprologic-kontakt.env):
  *   MAILGUN_API_KEY    Sending Key aus Mailgun (Pflicht, außer bei DRY_RUN=1)
- *   MAILGUN_DOMAIN     Versand-Domain in Mailgun, z. B. mg.apprologic.de (Pflicht)
+ *   MAILGUN_DOMAIN     Versand-Domain in Mailgun, z. B. service-pacemaker.com (Pflicht)
  *   MAILGUN_REGION     "eu" (Standard) oder "us"
  *   MAIL_TO            Empfänger, Standard info@apprologic.de
  *   MAIL_FROM          Absender, Standard "ApproLogic Kontaktformular <kontaktformular@MAILGUN_DOMAIN>"
@@ -58,7 +58,9 @@ const text = (v) => String(v ?? "").replace(/\r\n?/g, "\n").trim();
 /** Prüft die Formulardaten. Gibt { data } oder { error } zurück. */
 function validate(body) {
   if (oneLine(body.website)) return { spam: true }; // Fallenfeld, für Menschen unsichtbar
-  const age = Date.now() - Number(body.t);
+  // t = Ausfüllzeit in ms, vom Browser gemessen. Kein Vergleich mit der Serveruhr,
+  // sonst gingen Anfragen von Rechnern mit falsch gehender Uhr still verloren.
+  const age = Number(body.t);
   if (!Number.isFinite(age) || age < MIN_FILL_MS || age > MAX_FORM_AGE_MS) return { spam: true };
 
   const data = {
@@ -99,6 +101,10 @@ async function sendMail(d) {
     text: lines.join("\n"),
     "h:Reply-To": `"${d.name.replace(/["\\<>]/g, "")}" <${d.email}>`,
   });
+  // Kein Öffnungs- oder Klick-Tracking für Formularmails, unabhängig von der Einstellung der Domain
+  form.set("o:tracking", "no");
+  // Tag zum Filtern im Mailgun-Log (die Domain wird auch für andere Mails genutzt)
+  form.set("o:tag", "kontaktformular");
   if (env.MAILGUN_TEST_MODE === "1") form.set("o:testmode", "yes");
 
   if (DRY_RUN) {

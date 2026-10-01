@@ -23,7 +23,8 @@ export default function ContactForm() {
       const res = await fetch(ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({ ...Object.fromEntries(new FormData(form)), t: startedAt.current }),
+        // t = Ausfüllzeit in Millisekunden, im Browser gemessen (unabhängig von falsch gehenden Uhren)
+        body: JSON.stringify({ ...Object.fromEntries(new FormData(form)), t: Date.now() - startedAt.current }),
       });
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.ok) {

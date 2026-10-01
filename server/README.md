@@ -7,9 +7,11 @@ Die Webseite ist statisch. Damit das Kontaktformular Mails versenden kann, läuf
 - Die Mail hat „Reply-To“ auf den Absender gesetzt: Antworten gehen direkt an den Anfragenden
 - Formularinhalte werden nicht protokolliert
 
+**Schritt für Schritt einrichten:** [CHECKLISTE-KONTAKTFORMULAR.md](CHECKLISTE-KONTAKTFORMULAR.md) (Mailgun, DNS, Server, Test und Fehlersuche).
+
 ## Voraussetzungen in Mailgun
 
-1. Versand-Domain anlegen (Empfehlung: `mg.apprologic.de`, Region **EU**) und die angezeigten DNS-Einträge (SPF, DKIM, ggf. MX/CNAME) beim DNS-Anbieter setzen, bis Mailgun die Domain als verifiziert anzeigt.
+1. Versand-Domain: Wir nutzen die bereits verifizierte Domain `service-pacemaker.com` (Region **EU**). Für eine neue Domain müssten die von Mailgun angezeigten DNS-Einträge (SPF, DKIM, MX) gesetzt werden, bis Mailgun sie als verifiziert anzeigt.
 2. Unter *Sending → Domain settings → Sending API keys* einen eigenen **Sending Key** für diese Domain erzeugen. Er darf nur Mails versenden.
 3. Den Vertrag zur Auftragsverarbeitung (DPA) mit Mailgun abschließen.
 
@@ -43,7 +45,7 @@ Logs: `sudo journalctl -u apprologic-kontakt -f`
 
 ```bash
 # Dienst ohne Mailgun-Aufruf starten
-DRY_RUN=1 MAILGUN_DOMAIN=mg.apprologic.de ALLOWED_ORIGINS=http://localhost:3000 node server/kontaktformular.mjs
+DRY_RUN=1 MAILGUN_DOMAIN=service-pacemaker.com ALLOWED_ORIGINS=http://localhost:3000 node server/kontaktformular.mjs
 
 # Webseite so starten, dass das Formular an den lokalen Dienst sendet
 NEXT_PUBLIC_CONTACT_ENDPOINT=http://127.0.0.1:3001/api/kontakt npm.cmd run dev
