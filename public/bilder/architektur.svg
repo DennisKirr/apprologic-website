@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Architektur des Service Pacemaker: Der Client besteht aus Gaia Web und Gaia Mobile auf dem Gaia Platform Layer, basierend auf React und React Native. Er kommuniziert per HTTPS, REST und Websockets mit dem Server. Der Server besteht aus dem Infrastructure Layer mit Proxy und TLS-Terminierung, Load Balancer und Firewall, dem Node.js-API-Server mit Websockets, der Datenbank CouchDB 3.x und einem Object Store in der Cloud, zum Beispiel AWS S3.">
+  <style>
+    text { font-family: "Work Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .h { font-size: 24px; font-weight: 600; fill: #175173; }
+    .sub { font-size: 14px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .b { font-size: 16px; font-weight: 600; }
+    .s { font-size: 13px; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .flow { stroke-dasharray: 2 12; animation: flow 1.4s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -28; } }
+    @media (prefers-reduced-motion: reduce) { .flow { animation: none; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f0f5"/>
+      <stop offset="1" stop-color="#f7fafc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".12" r=".55">
+      <stop offset="0" stop-color="#24b38a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#24b38a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="infra" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#175173"/>
+      <stop offset="1" stop-color="#1c638c"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#c9d9e3"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0f3a53" flood-opacity=".14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M1 1L9 5L1 9" fill="none" stroke="#1c638c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="520" fill="url(#bg)"/>
+  <rect width="1200" height="520" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="520" fill="url(#glow)"/>
+
+  <!-- Karten -->
+  <g filter="url(#shadow)">
+    <rect x="60" y="50" width="440" height="420" rx="22" fill="#fff"/>
+    <rect x="700" y="50" width="440" height="420" rx="22" fill="#fff"/>
+  </g>
+
+  <!-- Verbindung -->
+  <path d="M514 262H686" stroke="#c3d5e1" stroke-width="3" fill="none"/>
+  <path class="flow" d="M514 262H686" stroke="#24b38a" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M520 262H680" stroke="transparent" stroke-width="1" fill="none" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <rect x="520" y="222" width="160" height="26" rx="13" fill="#fff" stroke="#d5e2ea"/>
+  <text x="600" y="239.5" text-anchor="middle" class="s" style="font-size:12px;font-weight:600" fill="#1c638c">HTTPS · REST · Websockets</text>
+
+  <!-- Client -->
+  <text x="90" y="98" class="h">Client</text>
+  <text x="90" y="122" class="sub">Browser und native Apps</text>
+
+  <rect x="90" y="160" width="182" height="66" rx="14" fill="#e8f0f5"/>
+  <g stroke="#1c638c" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="110" y="182" width="26" height="18" rx="2"/><path d="M118 205h10"/>
+  </g>
+  <text x="148" y="198.5" class="b" fill="#1c638c">Gaia Web</text>
+
+  <rect x="288" y="160" width="182" height="66" rx="14" fill="#e8f0f5"/>
+  <g stroke="#1c638c" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="310" y="178" width="16" height="28" rx="3"/><path d="M316 201h4"/>
+  </g>
+  <text x="338" y="198.5" class="b" fill="#1c638c">Gaia Mobile</text>
+
+  <rect x="90" y="246" width="380" height="66" rx="14" fill="#e4f6f0"/>
+  <text x="280" y="284.5" text-anchor="middle" class="b" fill="#17805f">Gaia Platform Layer</text>
+
+  <rect x="90.5" y="332.5" width="181" height="65" rx="14" fill="#f4f7f9" stroke="#e1e8ed"/>
+  <text x="181" y="370.5" text-anchor="middle" class="b" fill="#175173">React</text>
+  <rect x="288.5" y="332.5" width="181" height="65" rx="14" fill="#f4f7f9" stroke="#e1e8ed"/>
+  <text x="379" y="370.5" text-anchor="middle" class="b" fill="#175173">React Native</text>
+
+  <text x="280" y="440" text-anchor="middle" class="sub" style="font-size:13px">Web · iOS · Android</text>
+
+  <!-- Server -->
+  <text x="730" y="98" class="h">Server</text>
+  <text x="730" y="122" class="sub">Betrieb durch ApproLogic</text>
+
+  <rect x="730" y="140" width="380" height="92" rx="14" fill="url(#infra)"/>
+  <g stroke="#fff" stroke-width="2" fill="none" stroke-linejoin="round">
+    <path d="M758 156l10 4v7c0 6-4 10-10 12-6-2-10-6-10-12v-7z"/>
+  </g>
+  <text x="778" y="172" class="b" fill="#fff" style="font-size:15px">Infrastructure Layer</text>
+  <g>
+    <rect x="750" y="190" width="126" height="28" rx="8" fill="#fff" fill-opacity=".14"/>
+    <rect x="884" y="190" width="118" height="28" rx="8" fill="#fff" fill-opacity=".14"/>
+    <rect x="1010" y="190" width="80" height="28" rx="8" fill="#fff" fill-opacity=".14"/>
+    <text x="813" y="208.5" text-anchor="middle" class="s" fill="#fff" style="font-size:12.5px">Proxy / TLS</text>
+    <text x="943" y="208.5" text-anchor="middle" class="s" fill="#fff" style="font-size:12.5px">Load Balancer</text>
+    <text x="1050" y="208.5" text-anchor="middle" class="s" fill="#fff" style="font-size:12.5px">Firewall</text>
+  </g>
+
+  <rect x="730.5" y="252.5" width="379" height="65" rx="14" fill="#e4f6f0" stroke="#bfe9da"/>
+  <text x="920" y="279" text-anchor="middle" class="b" fill="#17805f">Node.js</text>
+  <text x="920" y="300" text-anchor="middle" class="s" fill="#17805f">API-Server · Websockets</text>
+
+  <g stroke="#1c638c" stroke-width="2" fill="none" marker-start="url(#arrow)" marker-end="url(#arrow)">
+    <path d="M880 322L832 352"/>
+    <path d="M960 322L1008 352"/>
+  </g>
+
+  <!-- Datenbank -->
+  <path d="M750 368v44c0 7 31 13 70 13s70-6 70-13v-44" fill="#e8f0f5" stroke="#1c638c" stroke-opacity=".5" stroke-width="1.5"/>
+  <ellipse cx="820" cy="368" rx="70" ry="13" fill="#f4f8fb" stroke="#1c638c" stroke-opacity=".5" stroke-width="1.5"/>
+  <text x="820" y="400" text-anchor="middle" class="b" fill="#175173" style="font-size:15px">CouchDB 3.x</text>
+  <text x="820" y="418" text-anchor="middle" class="s" fill="#6f777c" style="font-size:12px">Datenbank</text>
+
+  <!-- Object Store -->
+  <path transform="translate(1016 404) scale(1.18) translate(-1016 -404)" d="M968 428h92c17 0 28-11 28-25s-11-25-26-25c-3-15-16-25-31-25-12 0-22 6-28 16-3-1-6-2-10-2-14 0-25 11-25 25v2c-12 2-20 11-20 22 0 7 8 12 20 12z" fill="#e4f6f0" stroke="#24b38a" stroke-opacity=".7" stroke-width="1.5"/>
+  <text x="1016" y="407" text-anchor="middle" class="b" fill="#17805f" style="font-size:15px">Object Store</text>
+  <text x="1016" y="424" text-anchor="middle" class="s" fill="#6f777c" style="font-size:12px">Cloud, z. B. AWS S3</text>
+</svg>

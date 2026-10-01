@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -70 640 660" role="img" aria-label="KI-Assistent im Service Pacemaker: Ein Techniker fragt, was beim Tausch der Glasscheibe zu beachten ist. Die KI antwortet in drei Schritten und nennt Wartungshandbuch und Seite als Quelle. Hinweis: KI-unterstützt.">
+  <style>
+    text { font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .h { font-family: "Work Sans", "Segoe UI", Arial, sans-serif; font-weight: 600; fill: #175173; }
+    .m { font-size: 12.5px; fill: #6f777c; }
+    .a { font-size: 13.5px; fill: #1f2a33; }
+    .u { font-size: 14px; fill: #fff; }
+    .src { font-size: 12.5px; font-weight: 600; fill: #1c638c; }
+  </style>
+  <defs>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#29cc9d"/>
+      <stop offset="1" stop-color="#17805f"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#29cc9d"/>
+      <stop offset="1" stop-color="#1c638c"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-25%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#06202f" flood-opacity=".38"/>
+    </filter>
+    <filter id="shadow-sm" x="-50%" y="-40%" width="200%" height="190%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#06202f" flood-opacity=".30"/>
+    </filter>
+    <symbol id="spark" viewBox="0 0 24 24">
+      <path d="M12 2.5l2.2 6.3 6.3 2.2-6.3 2.2L12 19.5l-2.2-6.3L3.5 11l6.3-2.2z" fill="#fff"/>
+      <path d="M19 15.5l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z" fill="#fff" fill-opacity=".85"/>
+    </symbol>
+    <symbol id="doc" viewBox="0 0 16 16">
+      <path d="M4 1.5h5.5L13 5v9a.5.5 0 0 1-.5.5h-8.5A.5.5 0 0 1 3.5 14V2a.5.5 0 0 1 .5-.5z" fill="none" stroke="#1c638c" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M9.5 1.5V5H13M6 8.5h4M6 11h4" fill="none" stroke="#1c638c" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+
+  <!-- Chatfenster -->
+  <g filter="url(#shadow)">
+    <rect x="10" y="10" width="440" height="516" rx="22" fill="#fff"/>
+  </g>
+  <!-- Kopf -->
+  <circle cx="48" cy="44" r="19" fill="url(#ai)"/>
+  <use href="#spark" x="36" y="32" width="24" height="24"/>
+  <text x="78" y="40" class="h" font-size="16">KI-Assistent</text>
+  <text x="78" y="60" class="m">Antworten aus Ihrer Dokumentation</text>
+  <rect x="296" y="30" width="96" height="28" rx="14" fill="#e8f0f5"/>
+  <circle cx="310" cy="44" r="4" fill="#24b38a"/>
+  <text x="319" y="48.5" font-size="12.5" font-weight="600" fill="#1c638c">SN 24-0815</text>
+  <path d="M10 80H450" stroke="#e1e8ed"/>
+
+  <!-- Frage -->
+  <rect x="172" y="98" width="258" height="62" rx="16" fill="#1c638c"/>
+  <text class="u"><tspan x="190" y="124">Was muss beim Tausch der</tspan><tspan x="190" y="144">Glasscheibe beachtet werden?</tspan></text>
+
+  <!-- Antwort -->
+  <circle cx="40" cy="194" r="14" fill="url(#ai)"/>
+  <use href="#spark" x="31" y="185" width="18" height="18"/>
+  <rect x="64" y="178" width="308" height="196" rx="16" fill="#f4f7f9"/>
+  <text x="82" y="206" class="a" font-weight="600">Laut Wartungshandbuch in drei Schritten:</text>
+  <g font-size="11" font-weight="700" fill="#fff" text-anchor="middle">
+    <circle cx="92" cy="232" r="9" fill="#24b38a"/><text x="92" y="236">1</text>
+    <circle cx="92" cy="278" r="9" fill="#24b38a"/><text x="92" y="282">2</text>
+    <circle cx="92" cy="324" r="9" fill="#24b38a"/><text x="92" y="328">3</text>
+  </g>
+  <text class="a">
+    <tspan x="110" y="237">Maschine ausschalten und gegen</tspan><tspan x="110" y="255">Wiedereinschalten sichern.</tspan>
+    <tspan x="110" y="283">Dichtung prüfen und bei Bedarf</tspan><tspan x="110" y="301">ersetzen.</tspan>
+    <tspan x="110" y="329">Schrauben über Kreuz mit dem</tspan><tspan x="110" y="347">vorgegebenen Drehmoment anziehen.</tspan>
+  </text>
+
+  <!-- Quellen -->
+  <rect x="64.5" y="386.5" width="186" height="28" rx="8" fill="#fff" stroke="#cfdde6"/>
+  <use href="#doc" x="74" y="392" width="16" height="16"/>
+  <text x="96" y="405" class="src">Wartungshandbuch, S. 42</text>
+  <rect x="258.5" y="386.5" width="122" height="28" rx="8" fill="#fff" stroke="#cfdde6"/>
+  <use href="#doc" x="268" y="392" width="16" height="16"/>
+  <text x="290" y="405" class="src">Fehlerbaum, S. 3</text>
+  <g stroke="#17805f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M67 437.5l4 4 7-8"/>
+  </g>
+  <text x="86" y="442" font-size="12" fill="#17805f">Nur aus freigegebenen Dokumenten</text>
+
+  <!-- Eingabe -->
+  <rect x="30.5" y="464.5" width="400" height="44" rx="12" fill="#f4f7f9" stroke="#e1e8ed"/>
+  <text x="48" y="491" font-size="14" fill="#8e9aa6">Frage stellen …</text>
+  <circle cx="408" cy="486.5" r="15" fill="#24b38a"/>
+  <path d="M401 486.5h13M409 481l5.5 5.5-5.5 5.5" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Quellseite -->
+  <g filter="url(#shadow-sm)">
+    <rect x="392" y="150" width="160" height="218" rx="12" fill="#fff"/>
+  </g>
+  <path d="M392 162a12 12 0 0 1 12-12h136a12 12 0 0 1 12 12v32H392z" fill="#f4f7f9"/>
+  <text x="406" y="169" class="h" font-size="11.5">Wartungshandbuch</text>
+  <text x="406" y="185" class="m" font-size="11">Seite 42</text>
+  <g fill="#d5e0e7">
+    <rect x="406" y="208" width="120" height="6" rx="3"/>
+    <rect x="406" y="220" width="132" height="6" rx="3"/>
+    <rect x="406" y="232" width="96" height="6" rx="3"/>
+  </g>
+  <rect x="400" y="246" width="144" height="46" rx="6" fill="#24b38a" fill-opacity=".16"/>
+  <rect x="400" y="246" width="3" height="46" fill="#24b38a"/>
+  <g fill="#17805f" fill-opacity=".55">
+    <rect x="410" y="255" width="120" height="6" rx="3"/>
+    <rect x="410" y="267" width="126" height="6" rx="3"/>
+    <rect x="410" y="279" width="84" height="6" rx="3"/>
+  </g>
+  <rect x="406" y="302" width="132" height="54" rx="6" fill="#e8f0f5"/>
+  <g stroke="#1c638c" stroke-opacity=".55" stroke-width="2" fill="none" stroke-linejoin="round">
+    <rect x="428" y="311" width="46" height="36" rx="3"/>
+    <path d="M474 329H508V317M508 329V343"/>
+    <circle cx="508" cy="313" r="4"/>
+  </g>
+
+  <!-- Störer -->
+  <g transform="rotate(-10 456 14)">
+    <g filter="url(#shadow-sm)">
+      <circle cx="456" cy="14" r="64" fill="url(#badge)"/>
+    </g>
+    <circle cx="456" cy="14" r="64" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="3"/>
+    <circle cx="456" cy="14" r="55" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="1.5" stroke-dasharray="2 4"/>
+    <use href="#spark" x="445" y="-35" width="22" height="22"/>
+    <text x="456" y="21" text-anchor="middle" class="h" font-size="38" font-weight="700" style="fill:#fff">KI</text>
+    <text x="456" y="40" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" letter-spacing=".04em">unterstützt</text>
+  </g>
+</svg>

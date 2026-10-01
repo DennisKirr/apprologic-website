@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Wartung im Portal: links die Liste der fälligen Wartungen mit Status, von überfällig über fällig in fünf Tagen bis geplant. Rechts der Wartungsnachweis zur ausgewählten Halbjahreswartung: alle Prüfpunkte mit Ergebnis, Messwert im Sollbereich und Foto, quittiert vom Techniker und an ERP und Maschinenakte übertragen.">
+  <style>
+    text { font-family: "Work Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .t { font-size: 14px; font-weight: 600; fill: #175173; }
+    .s { font-size: 12px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .r { font-size: 12.5px; fill: #175173; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .v { font-size: 12.5px; font-weight: 600; fill: #17805f; text-anchor: end; }
+    .pill { font-size: 11px; font-weight: 600; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; text-anchor: middle; }
+    .h { font-size: 16px; font-weight: 600; fill: #175173; }
+    .chip { font-size: 11.5px; font-weight: 600; fill: #1c638c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f0f5"/>
+      <stop offset="1" stop-color="#f7fafc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".12" r=".55">
+      <stop offset="0" stop-color="#24b38a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#24b38a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#c9d9e3"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f3a53" flood-opacity=".22"/>
+    </filter>
+    <clipPath id="win"><rect x="60" y="30" width="1080" height="500" rx="14"/></clipPath>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <rect width="1200" height="560" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="560" fill="url(#glow)"/>
+
+  <!-- Fenster -->
+  <rect x="60" y="30" width="1080" height="500" rx="14" fill="#fff" filter="url(#shadow)"/>
+  <g clip-path="url(#win)"><rect x="60" y="30" width="1080" height="42" fill="#f4f8fa"/></g>
+  <path d="M60 72H1140" stroke="#e3ebf0" stroke-width="1.5"/>
+  <g fill="#d3dee5"><circle cx="82" cy="51" r="5"/><circle cx="100" cy="51" r="5"/><circle cx="118" cy="51" r="5"/></g>
+  <text x="142" y="55" class="s">Wartung  ›  <tspan style="fill:#175173;font-weight:600">Fällige Wartungen</tspan></text>
+
+  <!-- ============ Liste ============ -->
+  <text x="84" y="110" class="h">Fällige Wartungen</text>
+  <rect x="478" y="92" width="122" height="24" rx="12" fill="#e3eef5"/>
+  <text x="539" y="108" text-anchor="middle" class="chip">Alle Maschinen ▾</text>
+
+  <g fill="#f4f8fa">
+    <rect x="84" y="128" width="516" height="66" rx="10"/>
+    <rect x="84" y="276" width="516" height="66" rx="10"/>
+    <rect x="84" y="350" width="516" height="66" rx="10"/>
+    <rect x="84" y="424" width="516" height="66" rx="10"/>
+  </g>
+  <rect x="84" y="202" width="516" height="66" rx="10" fill="#e9f7f2" stroke="#24b38a" stroke-width="1.5"/>
+
+  <g fill="#dfeaf1">
+    <rect x="100" y="141" width="40" height="40" rx="9"/><rect x="100" y="215" width="40" height="40" rx="9"/>
+    <rect x="100" y="289" width="40" height="40" rx="9"/><rect x="100" y="363" width="40" height="40" rx="9"/>
+    <rect x="100" y="437" width="40" height="40" rx="9"/>
+  </g>
+  <g fill="#9fb3c0">
+    <rect x="109" y="151" width="22" height="16" rx="2"/><rect x="113" y="168" width="14" height="4" rx="1"/>
+    <rect x="109" y="225" width="22" height="16" rx="2"/><rect x="113" y="242" width="14" height="4" rx="1"/>
+    <rect x="109" y="299" width="22" height="16" rx="2"/><rect x="113" y="316" width="14" height="4" rx="1"/>
+    <rect x="109" y="373" width="22" height="16" rx="2"/><rect x="113" y="390" width="14" height="4" rx="1"/>
+    <rect x="109" y="447" width="22" height="16" rx="2"/><rect x="113" y="464" width="14" height="4" rx="1"/>
+  </g>
+
+  <text x="154" y="156" class="t">Verpackungslinie</text><text x="154" y="175" class="s">SN 23-0412 · Jahreswartung</text>
+  <text x="154" y="230" class="t">Bearbeitungszentrum</text><text x="154" y="249" class="s">SN 24-1087 · Halbjahreswartung</text>
+  <text x="154" y="304" class="t">Kompressor</text><text x="154" y="323" class="s">SN 22-0877 · Filterwechsel</text>
+  <text x="154" y="378" class="t">Bearbeitungszentrum</text><text x="154" y="397" class="s">SN 24-1102 · Jahreswartung</text>
+  <text x="154" y="452" class="t">Verpackungslinie</text><text x="154" y="471" class="s">SN 23-0398 · Quartalswartung</text>
+
+  <!-- Status -->
+  <rect x="456" y="150" width="128" height="22" rx="11" fill="#fdecec"/>
+  <circle cx="470" cy="161" r="3.5" fill="#d64045"/>
+  <text x="524" y="165" class="pill" style="fill:#b3261e">Überfällig · 3 Tage</text>
+  <rect x="470" y="224" width="114" height="22" rx="11" fill="#fff" stroke="#bfe6d6"/>
+  <path d="M481 235L484 238L490 232" fill="none" stroke="#17805f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="533" y="239" class="pill" style="fill:#17805f">Quittiert heute</text>
+  <rect x="460" y="298" width="124" height="22" rx="11" fill="#fdf3e0"/>
+  <circle cx="474" cy="309" r="3.5" fill="#d18f16"/>
+  <text x="526" y="313" class="pill" style="fill:#8a5a00">Fällig in 5 Tagen</text>
+  <rect x="474" y="372" width="110" height="22" rx="11" fill="#eef3f6"/>
+  <text x="529" y="387" class="pill" style="fill:#6f777c">Geplant · 14.10.</text>
+  <rect x="474" y="446" width="110" height="22" rx="11" fill="#eef3f6"/>
+  <text x="529" y="461" class="pill" style="fill:#6f777c">Geplant · 02.11.</text>
+
+  <!-- ============ Nachweis ============ -->
+  <rect x="620" y="88" width="496" height="420" rx="12" fill="#fff" stroke="#e3ebf0" stroke-width="1.5"/>
+  <text x="644" y="118" class="h">Wartungsnachweis</text>
+  <text x="644" y="138" class="s">Halbjahreswartung · Bearbeitungszentrum · SN 24-1087</text>
+  <path d="M636 152H1100" stroke="#eef3f6" stroke-width="1.5"/>
+
+  <g fill="#24b38a">
+    <circle cx="654" cy="176" r="9"/><circle cx="654" cy="214" r="9"/><circle cx="654" cy="252" r="9"/>
+    <circle cx="654" cy="290" r="9"/><circle cx="654" cy="328" r="9"/><circle cx="654" cy="366" r="9"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M650 176L653 179L658 173"/><path d="M650 214L653 217L658 211"/><path d="M650 252L653 255L658 249"/>
+    <path d="M650 290L653 293L658 287"/><path d="M650 328L653 331L658 325"/><path d="M650 366L653 369L658 363"/>
+  </g>
+  <g class="r">
+    <text x="674" y="180.5">Funktionstest</text>
+    <text x="674" y="218.5">Sicherheitsschalter</text>
+    <text x="674" y="256.5">Firmwarestand</text>
+    <text x="674" y="294.5">Hydraulikdruck <tspan class="s" style="font-size:11px">Soll 170–190 bar</tspan></text>
+    <text x="674" y="332.5">Filter getauscht</text>
+    <text x="674" y="370.5">Bemerkung</text>
+  </g>
+  <text x="1092" y="180.5" class="v">i. O.</text>
+  <text x="1092" y="218.5" class="v">i. O.</text>
+  <text x="1092" y="256.5" class="v">v4.2.1</text>
+  <text x="1092" y="294.5" class="v">182 bar</text>
+  <rect x="1056" y="316" width="36" height="24" rx="4" fill="#dfeaf1"/>
+  <path d="M1060 336L1069 327L1075 332L1080 328L1088 336Z" fill="#9fb3c0"/><circle cx="1082" cy="322" r="2.3" fill="#9fb3c0"/>
+  <text x="1092" y="370.5" class="s" text-anchor="end" style="fill:#175173">Keilriemen leicht verschlissen</text>
+  <g stroke="#f4f8fa" stroke-width="1.5"><path d="M644 195H1092M644 233H1092M644 271H1092M644 309H1092M644 347H1092"/></g>
+
+  <path d="M636 388H1100" stroke="#eef3f6" stroke-width="1.5"/>
+  <path d="M648 438C656 420 664 420 666 434C668 446 674 424 682 424C690 424 684 442 694 438C702 434 704 426 712 430C718 433 722 436 734 430" fill="none" stroke="#175173" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M644 448H770" stroke="#d3dee5" stroke-width="1.2"/>
+  <text x="644" y="468" class="t" style="font-size:13px">Quittiert von T. Wagner</text>
+  <text x="644" y="486" class="s">29.09. · 14:32 Uhr</text>
+
+  <g fill="#e9f7f2">
+    <rect x="918" y="412" width="174" height="26" rx="13"/>
+    <rect x="918" y="448" width="174" height="26" rx="13"/>
+  </g>
+  <g fill="none" stroke="#17805f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M932 425L936 429L943 421"/><path d="M932 461L936 465L943 457"/>
+  </g>
+  <text x="952" y="429.5" class="chip" style="fill:#17805f">An ERP übertragen</text>
+  <text x="952" y="465.5" class="chip" style="fill:#17805f">In der Maschinenakte</text>
+</svg>

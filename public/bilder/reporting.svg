@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Service-Dashboard für den Hersteller: Kennzahlen zu Anfragen, durchschnittlicher Bearbeitungszeit, Erstlösungsquote und erster Reaktion, jeweils mit Veränderung zum Vormonat. Darunter der Verlauf der Anfragen pro Woche über zwölf Wochen, von 162 auf 122 fallend, und die häufigsten Ursachen: Schmierung 28 %, Sensorik 21 %, Bedienfehler 17 %, Verschleißteile 14 %, Software 9 %.">
+  <style>
+    text { font-family: "Work Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .t { font-size: 14px; font-weight: 600; fill: #175173; }
+    .s { font-size: 12px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .ax { font-size: 11px; fill: #8a969d; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .lbl { font-size: 10.5px; font-weight: 700; letter-spacing: .07em; fill: #8a969d; }
+    .kpi { font-size: 30px; font-weight: 600; fill: #175173; }
+    .chip { font-size: 11.5px; font-weight: 600; fill: #1c638c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f0f5"/>
+      <stop offset="1" stop-color="#f7fafc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".12" r=".55">
+      <stop offset="0" stop-color="#24b38a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#24b38a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c638c" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#1c638c" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#c9d9e3"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f3a53" flood-opacity=".22"/>
+    </filter>
+    <clipPath id="win"><rect x="60" y="30" width="1080" height="500" rx="14"/></clipPath>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <rect width="1200" height="560" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="560" fill="url(#glow)"/>
+
+  <!-- Fenster -->
+  <rect x="60" y="30" width="1080" height="500" rx="14" fill="#fff" filter="url(#shadow)"/>
+  <g clip-path="url(#win)"><rect x="60" y="30" width="1080" height="42" fill="#f4f8fa"/></g>
+  <path d="M60 72H1140" stroke="#e3ebf0" stroke-width="1.5"/>
+  <g fill="#d3dee5"><circle cx="82" cy="51" r="5"/><circle cx="100" cy="51" r="5"/><circle cx="118" cy="51" r="5"/></g>
+  <text x="142" y="55" class="s">Reporting  ›  <tspan style="fill:#175173;font-weight:600">Service-Dashboard</tspan></text>
+  <g fill="#e3eef5">
+    <rect x="818" y="40" width="96" height="22" rx="11"/>
+    <rect x="922" y="40" width="96" height="22" rx="11"/>
+    <rect x="1026" y="40" width="90" height="22" rx="11"/>
+  </g>
+  <text x="866" y="55" text-anchor="middle" class="chip">90 Tage ▾</text>
+  <text x="970" y="55" text-anchor="middle" class="chip">Region ▾</text>
+  <text x="1071" y="55" text-anchor="middle" class="chip">Team ▾</text>
+
+  <!-- Kennzahlen -->
+  <g fill="#f4f8fa">
+    <rect x="84" y="88" width="246" height="86" rx="10"/>
+    <rect x="346" y="88" width="246" height="86" rx="10"/>
+    <rect x="608" y="88" width="246" height="86" rx="10"/>
+    <rect x="870" y="88" width="246" height="86" rx="10"/>
+  </g>
+  <text x="102" y="112" class="lbl">ANFRAGEN · 30 TAGE</text>
+  <text x="364" y="112" class="lbl">Ø BEARBEITUNGSZEIT</text>
+  <text x="626" y="112" class="lbl">ERSTLÖSUNGSQUOTE</text>
+  <text x="888" y="112" class="lbl">ERSTE REAKTION Ø</text>
+  <text x="102" y="147" class="kpi">518</text>
+  <text x="364" y="147" class="kpi">6,4 h</text>
+  <text x="626" y="147" class="kpi">72 %</text>
+  <text x="888" y="147" class="kpi">38 min</text>
+  <g fill="#17805f">
+    <path d="M102 158L107 165L112 158Z"/><path d="M364 158L369 165L374 158Z"/>
+    <path d="M626 165L631 158L636 165Z"/><path d="M888 158L893 165L898 158Z"/>
+  </g>
+  <text x="118" y="165" class="s">−8 % zum Vormonat</text>
+  <text x="380" y="165" class="s">−12 % zum Vormonat</text>
+  <text x="642" y="165" class="s">+5 Punkte zum Vormonat</text>
+  <text x="904" y="165" class="s">−9 min zum Vormonat</text>
+
+  <!-- Verlauf -->
+  <rect x="84" y="190" width="592" height="318" rx="10" fill="none" stroke="#eef3f6" stroke-width="1.5"/>
+  <text x="104" y="218" class="t">Anfragen pro Woche</text>
+  <text x="104" y="236" class="s">Alle Maschinentypen</text>
+  <g stroke="#eef3f6" stroke-width="1"><path d="M126 260H652M126 370H652"/></g>
+  <path d="M126 480H652" stroke="#d3dee5" stroke-width="1.5"/>
+  <g class="ax" text-anchor="end"><text x="118" y="264">200</text><text x="118" y="374">150</text><text x="118" y="484">100</text></g>
+  <g class="ax" text-anchor="middle">
+    <text x="126" y="499">KW 29</text><text x="268" y="499">KW 32</text><text x="411" y="499">KW 35</text><text x="554" y="499">KW 38</text>
+  </g>
+  <text x="652" y="499" text-anchor="end" class="ax">KW 40</text>
+  <path d="M126 343.6L173.8 326L221.6 352.4L269.5 315L317.3 330.4L365.1 370L412.9 378.8L460.7 389.8L508.5 396.4L556.4 409.6L604.2 418.4L652 431.6V480H126Z" fill="url(#area)"/>
+  <path d="M126 343.6L173.8 326L221.6 352.4L269.5 315L317.3 330.4L365.1 370L412.9 378.8L460.7 389.8L508.5 396.4L556.4 409.6L604.2 418.4L652 431.6" fill="none" stroke="#1c638c" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="652" cy="431.6" r="5" fill="#1c638c" stroke="#fff" stroke-width="2"/>
+  <circle cx="269.5" cy="315" r="4" fill="#fff" stroke="#1c638c" stroke-width="2"/>
+  <text x="642" y="418" text-anchor="end" class="t" style="font-size:13px">122</text>
+  <text x="269.5" y="302" text-anchor="middle" class="ax" style="fill:#175173;font-weight:600">175</text>
+
+  <!-- Ursachen -->
+  <rect x="692" y="190" width="424" height="318" rx="10" fill="none" stroke="#eef3f6" stroke-width="1.5"/>
+  <text x="712" y="218" class="t">Häufigste Ursachen</text>
+  <text x="712" y="236" class="s">Anteil an allen Anfragen</text>
+  <g class="s" style="fill:#175173">
+    <text x="712" y="270">Schmierung</text>
+    <text x="712" y="320">Sensorik</text>
+    <text x="712" y="370">Bedienfehler</text>
+    <text x="712" y="420">Verschleißteile</text>
+    <text x="712" y="470">Software</text>
+  </g>
+  <g class="t" style="font-size:12.5px" text-anchor="end">
+    <text x="1096" y="270">28 %</text><text x="1096" y="320">21 %</text><text x="1096" y="370">17 %</text><text x="1096" y="420">14 %</text><text x="1096" y="470">9 %</text>
+  </g>
+  <g fill="#eef3f6">
+    <rect x="712" y="280" width="384" height="10" rx="4"/><rect x="712" y="330" width="384" height="10" rx="4"/>
+    <rect x="712" y="380" width="384" height="10" rx="4"/><rect x="712" y="430" width="384" height="10" rx="4"/>
+    <rect x="712" y="480" width="384" height="10" rx="4"/>
+  </g>
+  <g fill="#17805f">
+    <rect x="712" y="280" width="358" height="10" rx="4"/><rect x="712" y="330" width="269" height="10" rx="4"/>
+    <rect x="712" y="380" width="218" height="10" rx="4"/><rect x="712" y="430" width="179" height="10" rx="4"/>
+    <rect x="712" y="480" width="115" height="10" rx="4"/>
+  </g>
+</svg>

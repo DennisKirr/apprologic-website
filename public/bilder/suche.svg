@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Suche im Portal mit KI: Auf die Eingabe „Spindel wird nach einer Stunde heiß“ fasst der KI-Assistent die wahrscheinliche Ursache mit Quellen zusammen. Darunter die Treffer nach Quellen geordnet: Stellen im Wartungshandbuch und im Fehlerbaum, zwei ähnliche gelöste Serviceanfragen und zwei passende Ersatzteile mit Warenkorb-Schaltfläche.">
+  <style>
+    text { font-family: "Work Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .t { font-size: 13.5px; font-weight: 600; fill: #175173; }
+    .s { font-size: 12px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .k { fill: #17805f; font-weight: 700; }
+    .h { font-size: 11px; font-weight: 700; letter-spacing: .08em; fill: #17805f; }
+    .n { font-size: 11px; font-weight: 600; fill: #8a969d; }
+    .chip { font-size: 11.5px; font-weight: 600; fill: #1c638c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f0f5"/>
+      <stop offset="1" stop-color="#f7fafc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".12" r=".55">
+      <stop offset="0" stop-color="#24b38a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#24b38a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#c9d9e3"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f3a53" flood-opacity=".22"/>
+    </filter>
+    <clipPath id="win"><rect x="60" y="30" width="1080" height="500" rx="14"/></clipPath>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <rect width="1200" height="560" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="560" fill="url(#glow)"/>
+
+  <!-- Fenster -->
+  <rect x="60" y="30" width="1080" height="500" rx="14" fill="#fff" filter="url(#shadow)"/>
+  <g clip-path="url(#win)"><rect x="60" y="30" width="1080" height="42" fill="#f4f8fa"/></g>
+  <path d="M60 72H1140" stroke="#e3ebf0" stroke-width="1.5"/>
+  <g fill="#d3dee5"><circle cx="82" cy="51" r="5"/><circle cx="100" cy="51" r="5"/><circle cx="118" cy="51" r="5"/></g>
+  <text x="142" y="55" class="s">Suche  ›  <tspan style="fill:#175173;font-weight:600">Alle Quellen</tspan></text>
+
+  <!-- Suchfeld -->
+  <rect x="84" y="88" width="1032" height="46" rx="23" fill="#fff" stroke="#24b38a" stroke-width="2"/>
+  <circle cx="110" cy="110" r="7" fill="none" stroke="#175173" stroke-width="2"/>
+  <path d="M115 115L121 121" stroke="#175173" stroke-width="2" stroke-linecap="round"/>
+  <text x="134" y="116" style="font-size:15.5px;font-weight:500" fill="#175173">Spindel wird nach einer Stunde heiß</text>
+  <rect x="930" y="96" width="176" height="30" rx="15" fill="#eef3f6"/>
+  <text x="982" y="115.5" text-anchor="middle" class="chip" style="fill:#6f777c">Volltext</text>
+  <rect x="1022" y="99" width="82" height="24" rx="12" fill="#17805f"/>
+  <path d="M1040 104L1042 109L1047 111L1042 113L1040 118L1038 113L1033 111L1038 109Z" fill="#fff"/>
+  <text x="1074" y="115.5" text-anchor="middle" class="chip" style="fill:#fff">KI</text>
+
+  <!-- Filter -->
+  <g fill="#e3eef5">
+    <rect x="84" y="146" width="118" height="24" rx="12"/>
+    <rect x="210" y="146" width="116" height="24" rx="12"/>
+    <rect x="334" y="146" width="74" height="24" rx="12"/>
+  </g>
+  <text x="98" y="162" class="chip">SN 24-1087  ×</text>
+  <text x="224" y="162" class="chip">Spindeleinheit  ×</text>
+  <text x="348" y="162" class="chip">Deutsch</text>
+  <text x="1116" y="162" text-anchor="end" class="n">19 Treffer</text>
+
+  <!-- KI-Zusammenfassung -->
+  <rect x="84" y="182" width="1032" height="92" rx="12" fill="#e9f7f2" stroke="#bfe6d6"/>
+  <path d="M112 198L115 206.5L123.5 209.5L115 212.5L112 221L109 212.5L100.5 209.5L109 206.5Z" fill="#17805f"/>
+  <text x="136" y="206" class="h">ZUSAMMENFASSUNG DES KI-ASSISTENTEN</text>
+  <text x="136" y="228" class="s" style="font-size:13px;fill:#175173">Häufigste Ursache ist eine unzureichende Schmierung der Spindellager. Prüfen Sie zuerst Schmierintervall und</text>
+  <text x="136" y="246" class="s" style="font-size:13px;fill:#175173">Schmierleitung, erst danach die Lager selbst.</text>
+  <g fill="#fff" stroke="#bfe6d6">
+    <rect x="460" y="233" width="180" height="22" rx="11"/>
+    <rect x="648" y="233" width="186" height="22" rx="11"/>
+  </g>
+  <text x="474" y="248" class="chip" style="fill:#17805f">Wartungshandbuch · S. 38</text>
+  <text x="662" y="248" class="chip" style="fill:#17805f">Anfrage #4711 · gelöst</text>
+
+  <!-- Spalten -->
+  <g fill="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M86 290H95L99 294V306H86Z" stroke="#1c638c"/>
+    <path d="M454 291A3 3 0 0 1 457 288H467A3 3 0 0 1 470 291V299A3 3 0 0 1 467 302H461L456 306V302A3 3 0 0 1 454 299Z" stroke="#1c638c"/>
+    <path d="M820 290H823L826 302H835L838 294H824" stroke="#1c638c"/><circle cx="828" cy="306" r="1.4" stroke="#1c638c"/><circle cx="834" cy="306" r="1.4" stroke="#1c638c"/>
+  </g>
+  <text x="108" y="303" class="h" style="fill:#175173">DOKUMENTATION</text><text x="428" y="303" text-anchor="end" class="n">12</text>
+  <text x="478" y="303" class="h" style="fill:#175173">SERVICEANFRAGEN</text><text x="796" y="303" text-anchor="end" class="n">4</text>
+  <text x="846" y="303" class="h" style="fill:#175173">ERSATZTEILE</text><text x="1116" y="303" text-anchor="end" class="n">3</text>
+
+  <g fill="#f4f8fa">
+    <rect x="84" y="316" width="348" height="84" rx="10"/><rect x="84" y="410" width="348" height="84" rx="10"/>
+    <rect x="452" y="316" width="348" height="84" rx="10"/><rect x="452" y="410" width="348" height="84" rx="10"/>
+    <rect x="820" y="316" width="296" height="84" rx="10"/><rect x="820" y="410" width="296" height="84" rx="10"/>
+  </g>
+
+  <!-- Dokumentation -->
+  <text x="100" y="342" class="t">Wartungshandbuch, Kap. 4</text><text x="416" y="342" text-anchor="end" class="n">S. 38</text>
+  <text x="100" y="364" class="s">… steigt die <tspan class="k">Temperatur</tspan> der <tspan class="k">Spindel</tspan> nach</text>
+  <text x="100" y="382" class="s">längerem Betrieb, Schmierintervall prüfen …</text>
+  <text x="100" y="436" class="t">Fehlerbaum Spindeleinheit</text><text x="416" y="436" text-anchor="end" class="n">S. 3</text>
+  <text x="100" y="458" class="s">Warnung W-212 <tspan class="k">Spindel-Übertemperatur</tspan>:</text>
+  <text x="100" y="476" class="s">Lager, Kühlung, Riemenspannung prüfen</text>
+
+  <!-- Serviceanfragen -->
+  <text x="468" y="342" class="t">#4711 Spindel überhitzt</text>
+  <rect x="736" y="329" width="50" height="18" rx="9" fill="#e9f7f2"/><text x="761" y="342" text-anchor="middle" class="chip" style="font-size:10.5px;fill:#17805f">Gelöst</text>
+  <text x="468" y="364" class="s">Lösung: Schmierleitung verstopft, gereinigt,</text>
+  <text x="468" y="382" class="s">Intervall angepasst · Kunde Werk Nord</text>
+  <text x="468" y="436" class="t">#4630 Warnung W-212</text>
+  <rect x="736" y="423" width="50" height="18" rx="9" fill="#e9f7f2"/><text x="761" y="436" text-anchor="middle" class="chip" style="font-size:10.5px;fill:#17805f">Gelöst</text>
+  <text x="468" y="458" class="s">Lösung: <tspan class="k">Rillenkugellager</tspan> getauscht,</text>
+  <text x="468" y="476" class="s">Temperatur wieder im Normalbereich</text>
+
+  <!-- Ersatzteile -->
+  <text x="836" y="342" class="t">Rillenkugellager</text>
+  <text x="836" y="362" class="s">6205-2RS · Pos. 2</text>
+  <text x="836" y="380" class="s">Spindeleinheit</text>
+  <text x="836" y="436" class="t">Schmiernippel M8x1</text>
+  <text x="836" y="456" class="s">SE-1071 · Pos. 7</text>
+  <text x="836" y="474" class="s">Spindeleinheit</text>
+  <g fill="#17805f"><rect x="1060" y="344" width="40" height="32" rx="8"/><rect x="1060" y="438" width="40" height="32" rx="8"/></g>
+  <g fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M1069 352H1072L1075 364H1085L1088 356H1073"/><circle cx="1077" cy="368" r="1.3"/><circle cx="1083" cy="368" r="1.3"/>
+    <path d="M1069 446H1072L1075 458H1085L1088 450H1073"/><circle cx="1077" cy="462" r="1.3"/><circle cx="1083" cy="462" r="1.3"/>
+  </g>
+</svg>

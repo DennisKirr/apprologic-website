@@ -1,0 +1,14 @@
+# Zeilenenden: im Repository und beim Auschecken immer LF, auch unter Windows.
+# Wichtig für server/ (systemd-Unit, nginx-Konfiguration, .env), die unverändert auf den Linux-Server kopiert werden.
+* text=auto eol=lf
+
+# Binärdateien nicht anfassen
+*.png binary
+*.ico binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.gif binary
+*.woff binary
+*.woff2 binary

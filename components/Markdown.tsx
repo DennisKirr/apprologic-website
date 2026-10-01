@@ -2,6 +2,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
+import Zoomable from "./Zoomable";
 
 /**
  * Rendert den Markdown-Text einer Seite.
@@ -23,7 +24,9 @@ import ContactForm from "./ContactForm";
  * -> /kontakt/ Demo anfragen
  * ```
  *
- * ```image            Platzhalter für ein Bild (Text = Beschreibung)
+ * ```image            Bild: erste Zeile Pfad (Datei in public/), danach Alt-Text.
+ * /bilder/datei.svg   Ohne Pfad erscheint ein Platzhalter mit dem Text als Beschreibung.
+ *                     Optional nach dem Pfad eine Variante, z. B. "logos" (weiß, mit Innenabstand).
  * Screenshot der Maschinenliste
  * ```
  *
@@ -32,6 +35,7 @@ import ContactForm from "./ContactForm";
  */
 
 const LINK = /^->\s*(\S+)\s+(.+)$/;
+const IMAGE_SRC = /^\/\S+\.(svg|png|jpe?g|webp|avif|gif)$/i;
 
 function Tiles({ src }: { src: string }) {
   const blocks = src.trim().split(/\n\s*\n/);
@@ -56,6 +60,19 @@ function Tiles({ src }: { src: string }) {
         );
       })}
     </div>
+  );
+}
+
+function Image({ src }: { src: string }) {
+  const [first, ...rest] = src.trim().split("\n");
+  const [path, variant] = first.trim().split(/\s+/);
+  if (!IMAGE_SRC.test(path)) return <div className="img">{src.trim()}</div>;
+  return (
+    <figure className={`figure${variant ? ` figure-${variant}` : ""}`}>
+      {variant === "logos"
+        ? <img src={path} alt={rest.join(" ").trim()} loading="lazy" />
+        : <Zoomable src={path} alt={rest.join(" ").trim()} />}
+    </figure>
   );
 }
 
@@ -106,7 +123,7 @@ export default function Markdown({ children }: { children: string }) {
           if (lang === "tiles") return <Tiles src={src} />;
           if (lang === "numbers") return <Numbers src={src} />;
           if (lang === "cta") return <Cta src={src} />;
-          if (lang === "image") return <div className="img">{src.trim()}</div>;
+          if (lang === "image") return <Image src={src} />;
           if (lang === "form") return <ContactForm />;
           return <code className={className}>{children}</code>;
         },

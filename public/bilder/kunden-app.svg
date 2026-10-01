@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Startseite der App aus Sicht eines Kunden: registrierte Maschinen mit Status, offene Serviceanfragen, eine Schaltfläche „Serviceanfrage erstellen“ und ein Eingabefeld für den KI-Assistenten. Daneben Hinweise auf eine fällige Wartung, eine neue Nachricht vom Service, eine Antwort des KI-Assistenten mit Quelle aus dem Wartungshandbuch und eine übergebene Ersatzteilbestellung.">
+  <style>
+    text { font-family: "Work Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .t { font-size: 14px; font-weight: 600; fill: #175173; }
+    .s { font-size: 12px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .pt { font-size: 12.5px; font-weight: 600; fill: #175173; }
+    .ps { font-size: 10.5px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .pc { font-size: 10px; font-weight: 700; letter-spacing: .08em; fill: #17805f; }
+    .cap { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; fill: #17805f; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f0f5"/>
+      <stop offset="1" stop-color="#f7fafc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".12" r=".55">
+      <stop offset="0" stop-color="#24b38a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#24b38a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo" cx=".5" cy=".5" r=".5">
+      <stop offset=".4" stop-color="#1c638c" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#1c638c" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#175173"/>
+      <stop offset="1" stop-color="#1c638c"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#c9d9e3"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-20%" width="160%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f3a53" flood-opacity=".22"/>
+    </filter>
+    <filter id="shadow-sm" x="-10%" y="-30%" width="120%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0f3a53" flood-opacity=".09"/>
+    </filter>
+    <clipPath id="screen"><rect x="482" y="48" width="236" height="476" rx="26"/></clipPath>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <rect width="1200" height="560" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="560" fill="url(#glow)"/>
+  <ellipse cx="600" cy="290" rx="330" ry="260" fill="url(#halo)"/>
+
+  <text x="110" y="80" class="cap">DAS PORTAL AUS SICHT IHRER KUNDEN</text>
+
+  <!-- Hinweise links -->
+  <g filter="url(#shadow-sm)" fill="#fff">
+    <rect x="160" y="150" width="280" height="76" rx="14"/>
+    <rect x="130" y="330" width="310" height="76" rx="14"/>
+    <rect x="760" y="200" width="300" height="76" rx="14"/>
+    <rect x="760" y="360" width="280" height="76" rx="14"/>
+  </g>
+
+  <circle cx="198" cy="188" r="18" fill="#fdf3e0"/>
+  <g fill="none" stroke="#b7791f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="189" y="180" width="18" height="17" rx="3"/><path d="M189 186H207M194 177V182M202 177V182"/>
+  </g>
+  <text x="228" y="183" class="t">Wartung fällig</text>
+  <text x="228" y="203" class="s">Verpackungslinie · in 12 Tagen</text>
+
+  <circle cx="168" cy="368" r="18" fill="#e9f7f2"/>
+  <path d="M166 357L168.5 364.5L176 367L168.5 369.5L166 377L163.5 369.5L156 367L163.5 364.5Z" fill="#17805f"/>
+  <path d="M175 356L176 359L179 360L176 361L175 364L174 361L171 360L174 359Z" fill="#24b38a"/>
+  <text x="198" y="363" class="t">Antwort vom KI-Assistenten</text>
+  <text x="198" y="383" class="s">Quelle: Wartungshandbuch, Kap. 4, S. 38</text>
+
+  <!-- Hinweise rechts -->
+  <circle cx="798" cy="238" r="18" fill="#e9f7f2"/>
+  <path d="M788 230A4 4 0 0 1 792 226H804A4 4 0 0 1 808 230V240A4 4 0 0 1 804 244H796L790 249V244A4 4 0 0 1 788 240Z" fill="none" stroke="#17805f" stroke-width="2" stroke-linejoin="round"/>
+  <text x="828" y="233" class="t">Neue Nachricht vom Service</text>
+  <text x="828" y="253" class="s">Zur Anfrage „Störung Achse Z“</text>
+
+  <circle cx="798" cy="398" r="18" fill="#e9f7f2"/>
+  <g fill="none" stroke="#17805f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M787 389H791L794 402H806L809 393H792"/><circle cx="796" cy="407" r="1.6"/><circle cx="804" cy="407" r="1.6"/>
+  </g>
+  <text x="828" y="393" class="t">Bestellung übergeben</text>
+  <text x="828" y="413" class="s">2 Ersatzteile an den Webshop</text>
+
+  <!-- Smartphone -->
+  <rect x="470" y="36" width="260" height="500" rx="36" fill="#1d2a33" filter="url(#shadow)"/>
+  <rect x="482" y="48" width="236" height="476" rx="26" fill="#fff"/>
+  <g clip-path="url(#screen)">
+    <rect x="482" y="48" width="236" height="116" fill="url(#hub)"/>
+  </g>
+  <rect x="570" y="56" width="60" height="14" rx="7" fill="#1d2a33"/>
+  <text x="500" y="67" class="ps" style="fill:#fff;font-weight:600">9:41</text>
+
+  <circle cx="510" cy="96" r="12" fill="#fff" fill-opacity=".2"/>
+  <path d="M504 99L509 91L513 97L516 94L518 99Z" fill="#fff"/>
+  <text x="530" y="101" style="font-size:15px;font-weight:600" fill="#fff">Serviceportal</text>
+
+  <rect x="498" y="120" width="204" height="30" rx="15" fill="#fff"/>
+  <path d="M515 127L517 133L523 135L517 137L515 143L513 137L507 135L513 133Z" fill="#17805f"/>
+  <text x="530" y="139" class="ps" style="fill:#8a969d">KI-Assistent fragen …</text>
+
+  <text x="498" y="186" class="pc">MEINE MASCHINEN</text>
+  <g fill="#f4f8fa">
+    <rect x="498" y="196" width="204" height="50" rx="10"/>
+    <rect x="498" y="254" width="204" height="50" rx="10"/>
+    <rect x="498" y="340" width="204" height="50" rx="10"/>
+  </g>
+  <g fill="#dfeaf1">
+    <rect x="508" y="206" width="30" height="30" rx="7"/>
+    <rect x="508" y="264" width="30" height="30" rx="7"/>
+  </g>
+  <g fill="#9fb3c0">
+    <rect x="514" y="214" width="18" height="14" rx="2"/><rect x="517" y="228" width="12" height="3" rx="1"/>
+    <rect x="514" y="272" width="18" height="14" rx="2"/><rect x="517" y="286" width="12" height="3" rx="1"/>
+  </g>
+  <text x="548" y="217" class="pt">Bearbeitungszentrum</text>
+  <circle cx="551" cy="231" r="3" fill="#24b38a"/>
+  <text x="558" y="235" class="ps">SN 24-1087 · Läuft</text>
+  <text x="548" y="275" class="pt">Verpackungslinie</text>
+  <circle cx="551" cy="289" r="3" fill="#e0a526"/>
+  <text x="558" y="293" class="ps">SN 23-0412 · Wartung fällig</text>
+
+  <text x="498" y="330" class="pc">OFFENE ANFRAGEN</text>
+  <text x="510" y="361" class="pt">Störung Achse Z</text>
+  <rect x="510" y="369" width="92" height="16" rx="8" fill="#e3eef5"/>
+  <text x="556" y="380.5" text-anchor="middle" class="ps" style="fill:#1c638c;font-weight:600">In Bearbeitung</text>
+  <path d="M686 365L692 371L686 377" fill="none" stroke="#b8c7d1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="498" y="404" width="204" height="40" rx="10" fill="#17805f"/>
+  <path d="M526 424H538M532 418V430" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="548" y="429" style="font-size:13px;font-weight:600" fill="#fff">Serviceanfrage erstellen</text>
+
+  <!-- Navigationsleiste -->
+  <path d="M482 468H718" stroke="#e3ebf0" stroke-width="1.5"/>
+  <rect x="510" y="480" width="20" height="18" rx="5" fill="#1c638c"/>
+  <g fill="#c9d6de">
+    <rect x="563" y="480" width="20" height="18" rx="5"/>
+    <rect x="617" y="480" width="20" height="18" rx="5"/>
+    <rect x="670" y="480" width="20" height="18" rx="5"/>
+  </g>
+  <g class="ps" text-anchor="middle" style="font-size:9.5px">
+    <text x="520" y="511" style="fill:#1c638c;font-weight:600">Start</text>
+    <text x="573" y="511">Maschinen</text>
+    <text x="627" y="511">Anfragen</text>
+    <text x="680" y="511">Teile</text>
+  </g>
+</svg>

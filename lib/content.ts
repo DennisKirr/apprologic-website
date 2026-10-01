@@ -10,11 +10,13 @@ import matter from "gray-matter";
 const PAGES_DIR = path.join(process.cwd(), "content", "pages");
 
 export type PageMeta = {
-  title: string;          // Seitentitel (H1 und <title>)
+  title: string;          // Überschrift der Seite (H1); auch <title>, wenn kein seoTitle gesetzt ist
+  seoTitle?: string;      // kurzer Titel für Suchmaschinen und Browser-Tab, höchstens ca. 45 Zeichen (" | ApproLogic" kommt dazu)
   description?: string;   // Meta-Beschreibung für Suchmaschinen
   eyebrow?: string;       // kleine Zeile über der Überschrift
   lead?: string;          // Einleitungstext unter der Überschrift
   section?: string;       // Hauptbereich (für aktive Navigation), z. B. "funktionen"
+  heroImage?: { src: string; alt: string }; // Bild rechts neben der Überschrift, z. B. /bilder/ki-assistent.svg
   breadcrumbs?: { label: string; href: string }[];
   prev?: { label: string; href: string };
   next?: { label: string; href: string };
