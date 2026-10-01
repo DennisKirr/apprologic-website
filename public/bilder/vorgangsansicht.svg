@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Vorgangsansicht im Ticketsystem des Service Pacemaker: oben die Anfrage mit Status, zuständigem Team und Aktionen wie Weiterleiten, Wiedervorlage und Eskalieren. Darunter drei Spalten: links die Fakten zu Kunde, Maschine und Bearbeitung, in der Mitte die Kommunikation mit dem Kunden mit Textvorlage, rechts interne Notizen, die der Kunde nicht sieht.">
+  <style>
+    text { font-family: "Work Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .t { font-size: 13px; font-weight: 600; fill: #175173; }
+    .s { font-size: 11.5px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .k { font-size: 10px; font-weight: 700; letter-spacing: .07em; fill: #8a969d; }
+    .v { font-size: 12.5px; fill: #175173; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .col { font-size: 11px; font-weight: 700; letter-spacing: .08em; fill: #17805f; }
+    .b { font-size: 11.5px; fill: #175173; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .bw { font-size: 11.5px; fill: #fff; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .tm { font-size: 9.5px; fill: #8a969d; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .chip { font-size: 11px; font-weight: 600; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; text-anchor: middle; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f0f5"/>
+      <stop offset="1" stop-color="#f7fafc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".12" r=".55">
+      <stop offset="0" stop-color="#24b38a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#24b38a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#c9d9e3"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f3a53" flood-opacity=".22"/>
+    </filter>
+    <clipPath id="win"><rect x="60" y="30" width="1080" height="500" rx="14"/></clipPath>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <rect width="1200" height="560" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="560" fill="url(#glow)"/>
+
+  <!-- Fenster -->
+  <rect x="60" y="30" width="1080" height="500" rx="14" fill="#fff" filter="url(#shadow)"/>
+  <g clip-path="url(#win)"><rect x="60" y="30" width="1080" height="42" fill="#f4f8fa"/></g>
+  <path d="M60 72H1140" stroke="#e3ebf0" stroke-width="1.5"/>
+  <g fill="#d3dee5"><circle cx="82" cy="51" r="5"/><circle cx="100" cy="51" r="5"/><circle cx="118" cy="51" r="5"/></g>
+  <text x="142" y="55" class="s" style="font-size:12px">Service-Konsole  ›  Team Mechanik  ›  <tspan style="fill:#175173;font-weight:600">Anfrage #4752</tspan></text>
+
+  <!-- Kopf -->
+  <text x="84" y="106" style="font-size:17px;font-weight:600" fill="#175173">#4752 · Spindel wird nach einer Stunde heiß</text>
+  <rect x="84" y="118" width="104" height="22" rx="11" fill="#e3eef5"/>
+  <text x="136" y="133" class="chip" style="fill:#1c638c">In Bearbeitung</text>
+  <rect x="196" y="118" width="104" height="22" rx="11" fill="#eef3f6"/>
+  <text x="248" y="133" class="chip" style="fill:#175173">Team Mechanik</text>
+  <rect x="308" y="118" width="104" height="22" rx="11" fill="#fdf3e0"/>
+  <text x="360" y="133" class="chip" style="fill:#8a5a00">Priorität hoch</text>
+
+  <g fill="#fff" stroke="#d3dee5" stroke-width="1.5">
+    <rect x="786" y="96" width="104" height="32" rx="8"/><rect x="898" y="96" width="104" height="32" rx="8"/>
+  </g>
+  <rect x="1010" y="96" width="106" height="32" rx="8" fill="#1c638c"/>
+  <text x="838" y="116.5" class="chip" style="fill:#175173;font-size:11.5px">Weiterleiten</text>
+  <text x="950" y="116.5" class="chip" style="fill:#175173;font-size:11.5px">Wiedervorlage</text>
+  <text x="1063" y="116.5" class="chip" style="fill:#fff;font-size:11.5px">Eskalieren</text>
+  <path d="M84 154H1116" stroke="#eef3f6" stroke-width="1.5"/>
+
+  <!-- ============ Fakten ============ -->
+  <text x="84" y="180" class="col">FAKTEN</text>
+  <g class="k">
+    <text x="84" y="206">KUNDE</text><text x="84" y="250">MASCHINE</text><text x="84" y="294">TYP</text>
+    <text x="84" y="338">ZUSTÄNDIG</text><text x="84" y="382">ERSTELLT</text><text x="84" y="426">ZEIT ERFASST</text><text x="84" y="470">IOT-STATUS</text>
+  </g>
+  <g class="v">
+    <text x="84" y="224">Werk Nord · Standort Halle 2</text>
+    <text x="84" y="268">Bearbeitungszentrum · SN 24-1087</text>
+    <text x="84" y="312">Technische Anfrage</text>
+    <text x="84" y="356">A. Yilmaz</text>
+    <text x="84" y="400">29.09. · 08:14 Uhr</text>
+    <text x="84" y="444">0:45 h · für die Faktura</text>
+  </g>
+  <circle cx="90" cy="484" r="4" fill="#d18f16"/>
+  <text x="100" y="488" class="v">Warnung W-212</text>
+  <path d="M340 168V510" stroke="#eef3f6" stroke-width="1.5"/>
+
+  <!-- ============ Kommunikation ============ -->
+  <text x="364" y="180" class="col">KOMMUNIKATION MIT DEM KUNDEN</text>
+  <rect x="364" y="194" width="250" height="62" rx="12" fill="#f0f4f7"/>
+  <text x="376" y="212" class="tm" style="font-weight:600;fill:#6f777c">Kunde · 08:14</text>
+  <text x="376" y="229" class="b">Spindel wird nach etwa einer Stunde heiß,</text>
+  <text x="376" y="245" class="b">Warnung W-212. Fotos und Video anbei.</text>
+  <g fill="#dfeaf1"><rect x="624" y="200" width="46" height="46" rx="8"/><rect x="676" y="200" width="46" height="46" rx="8"/></g>
+  <g fill="#9fb3c0"><path d="M628 242L642 226L652 236L666 242Z"/><path d="M680 242L694 228L704 238L718 242Z"/></g>
+
+  <rect x="524" y="270" width="266" height="46" rx="12" fill="#1c638c"/>
+  <text x="536" y="288" class="tm" style="fill:#fff;fill-opacity:.8;font-weight:600">A. Yilmaz · 09:02</text>
+  <text x="536" y="305" class="bw">Bitte prüfen Sie den Füllstand der Schmierung.</text>
+
+  <rect x="364" y="330" width="250" height="46" rx="12" fill="#f0f4f7"/>
+  <text x="376" y="348" class="tm" style="font-weight:600;fill:#6f777c">Kunde · 09:40</text>
+  <text x="376" y="365" class="b">Füllstand ist zu niedrig, Foto anbei.</text>
+
+  <rect x="364" y="400" width="426" height="110" rx="10" fill="#fff" stroke="#d3dee5" stroke-width="1.5"/>
+  <text x="380" y="424" class="b" style="font-size:12.5px">Das passende Schmierfett ist unterwegs. Ein Techniker-</text>
+  <text x="380" y="442" class="b" style="font-size:12.5px">einsatz ist nach Ihrem Befund nicht nötig.</text>
+  <rect x="380" y="470" width="118" height="26" rx="13" fill="#eef3f6"/>
+  <text x="439" y="487" class="chip" style="fill:#175173">Textvorlage ▾</text>
+  <g fill="none" stroke="#8a969d" stroke-width="1.8" stroke-linecap="round"><path d="M522 490L534 478A4 4 0 0 1 540 484L528 496A6 6 0 0 1 519 487L530 476"/></g>
+  <rect x="684" y="468" width="92" height="30" rx="8" fill="#17805f"/>
+  <text x="730" y="487.5" class="chip" style="fill:#fff;font-size:12px">Senden</text>
+  <path d="M814 168V510" stroke="#eef3f6" stroke-width="1.5"/>
+
+  <!-- ============ Interne Notizen ============ -->
+  <text x="838" y="180" class="col">INTERNE NOTIZEN</text>
+  <rect x="838" y="194" width="278" height="26" rx="8" fill="#f4f8fa"/>
+  <g fill="none" stroke="#6f777c" stroke-width="1.6" stroke-linejoin="round">
+    <rect x="850" y="204" width="11" height="9" rx="2"/><path d="M852.5 204V201A3 3 0 0 1 858.5 201V204"/>
+  </g>
+  <text x="870" y="211.5" class="s" style="font-size:11px">Für den Kunden nicht sichtbar</text>
+
+  <g fill="#fff8e6" stroke="#f0dca8">
+    <rect x="838" y="232" width="278" height="84" rx="10"/>
+    <rect x="838" y="328" width="278" height="84" rx="10"/>
+    <rect x="838" y="424" width="278" height="84" rx="10"/>
+  </g>
+  <text x="852" y="252" class="tm" style="font-weight:600;fill:#8a5a00">T. Wagner · 08:30</text>
+  <text x="852" y="272" class="b">Ähnlicher Fall #4711: Schmierleitung</text>
+  <text x="852" y="289" class="b">war verstopft. Erst Füllstand prüfen</text>
+  <text x="852" y="306" class="b">lassen.</text>
+  <text x="852" y="348" class="tm" style="font-weight:600;fill:#8a5a00">A. Yilmaz · 09:45</text>
+  <text x="852" y="368" class="b">Schmierfett SE-2200 als Garantie-</text>
+  <text x="852" y="385" class="b">leistung versendet, Lieferschein</text>
+  <text x="852" y="402" class="b">verknüpft.</text>
+  <text x="852" y="444" class="tm" style="font-weight:600;fill:#8a5a00">Wiedervorlage · 06.10.</text>
+  <text x="852" y="464" class="b">Beim Kunden nachfragen, ob die</text>
+  <text x="852" y="481" class="b">Warnung W-212 noch auftritt.</text>
+</svg>

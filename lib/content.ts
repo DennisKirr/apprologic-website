@@ -15,6 +15,7 @@ export type PageMeta = {
   eyebrow?: string;       // kleine Zeile über der Überschrift
   lead?: string;          // Einleitungstext unter der Überschrift
   section?: string;       // Hauptbereich (für aktive Navigation), z. B. "funktionen"
+  heroImage?: { src: string; alt: string }; // Bild rechts neben der Überschrift, z. B. /bilder/ki-assistent.svg
   breadcrumbs?: { label: string; href: string }[];
   prev?: { label: string; href: string };
   next?: { label: string; href: string };

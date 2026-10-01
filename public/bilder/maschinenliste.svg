@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Installierte Basis im Portal: links die Maschinenliste des Kunden mit sechs Maschinen, Standort, Seriennummer und offenen Anfragen sowie der Schaltfläche zum Registrieren neuer Maschinen. Rechts die Akte der ausgewählten Maschine mit Standort und Servicepartner, die sich ändern lassen, und den Funktionen Serviceanfrage, Dokumentation, Wartung, Maschinenhistorie, Ersatzteile und Verbrauchsmaterial. Unten der Absprung in Teilekatalog, Webshop und IoT-Portal.">
+  <style>
+    text { font-family: "Work Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .t { font-size: 13px; font-weight: 600; fill: #175173; }
+    .s { font-size: 11.5px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .k { font-size: 10px; font-weight: 700; letter-spacing: .07em; fill: #8a969d; }
+    .h { font-size: 16px; font-weight: 600; fill: #175173; }
+    .chip { font-size: 11px; font-weight: 600; fill: #1c638c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .ic { fill: none; stroke: #1c638c; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f0f5"/>
+      <stop offset="1" stop-color="#f7fafc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".12" r=".55">
+      <stop offset="0" stop-color="#24b38a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#24b38a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#c9d9e3"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0f3a53" flood-opacity=".22"/>
+    </filter>
+    <clipPath id="win"><rect x="60" y="30" width="1080" height="500" rx="14"/></clipPath>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <rect width="1200" height="560" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="560" fill="url(#glow)"/>
+
+  <!-- Fenster -->
+  <rect x="60" y="30" width="1080" height="500" rx="14" fill="#fff" filter="url(#shadow)"/>
+  <g clip-path="url(#win)"><rect x="60" y="30" width="1080" height="42" fill="#f4f8fa"/></g>
+  <path d="M60 72H1140M536 72V530" stroke="#e3ebf0" stroke-width="1.5"/>
+  <g fill="#d3dee5"><circle cx="82" cy="51" r="5"/><circle cx="100" cy="51" r="5"/><circle cx="118" cy="51" r="5"/></g>
+  <text x="142" y="55" class="s" style="font-size:12px">Serviceportal  ›  <tspan style="fill:#175173;font-weight:600">Meine Maschinen</tspan></text>
+
+  <!-- ============ Maschinenliste ============ -->
+  <text x="84" y="104" class="h">Maschinenliste</text>
+  <text x="84" y="122" class="s">6 Maschinen an 3 Standorten</text>
+  <rect x="384" y="90" width="136" height="30" rx="8" fill="#17805f"/>
+  <path d="M398 105H408M403 100V110" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="416" y="109.5" class="chip" style="fill:#fff;font-size:11.5px">Registrieren</text>
+
+  <g class="k"><text x="100" y="150">MASCHINE</text><text x="304" y="150">STANDORT</text><text x="512" y="150" text-anchor="end">ANFRAGEN</text></g>
+  <path d="M84 158H520" stroke="#e3ebf0" stroke-width="1.5"/>
+
+  <rect x="84" y="164" width="436" height="50" rx="8" fill="#e9f7f2"/>
+  <rect x="84" y="164" width="3" height="50" rx="1.5" fill="#17805f"/>
+  <g stroke="#eef3f6" stroke-width="1.2"><path d="M92 270H520M92 326H520M92 382H520M92 438H520"/></g>
+
+  <g fill="#24b38a"><circle cx="100" cy="182" r="4"/><circle cx="100" cy="238" r="4"/><circle cx="100" cy="350" r="4"/><circle cx="100" cy="406" r="4"/></g>
+  <g fill="#d18f16"><circle cx="100" cy="294" r="4"/><circle cx="100" cy="462" r="4"/></g>
+
+  <g class="t">
+    <text x="112" y="186">Bearbeitungszentrum</text><text x="112" y="242">Verpackungslinie</text><text x="112" y="298">Bearbeitungszentrum</text>
+    <text x="112" y="354">Kompressor</text><text x="112" y="410">Verpackungslinie</text><text x="112" y="466">Prüfstand</text>
+  </g>
+  <g class="s" style="font-size:11px">
+    <text x="112" y="203">SN 24-1087</text><text x="112" y="259">SN 23-0412</text><text x="112" y="315">SN 24-1102</text>
+    <text x="112" y="371">SN 22-0877</text><text x="112" y="427">SN 23-0398</text><text x="112" y="483">SN 21-0533</text>
+  </g>
+  <g class="s" style="fill:#175173">
+    <text x="304" y="186">Werk Nord</text><text x="304" y="242">Werk Nord</text><text x="304" y="298">Werk Süd</text>
+    <text x="304" y="354">Werk Nord</text><text x="304" y="410">Werk Süd</text><text x="304" y="466">Werk Ost</text>
+  </g>
+  <g class="s" style="font-size:11px">
+    <text x="304" y="203">Halle 2</text><text x="304" y="259">Halle 4</text><text x="304" y="315">Halle 1</text>
+    <text x="304" y="371">Halle 2</text><text x="304" y="427">Halle 1</text><text x="304" y="483">Labor</text>
+  </g>
+  <g fill="#e3eef5"><rect x="488" y="178" width="24" height="18" rx="9"/><rect x="488" y="290" width="24" height="18" rx="9"/><rect x="488" y="458" width="24" height="18" rx="9"/></g>
+  <g class="chip" text-anchor="middle"><text x="500" y="191">1</text><text x="500" y="303">2</text><text x="500" y="471">1</text></g>
+  <g class="s" text-anchor="end" style="fill:#b8c7d1"><text x="508" y="242">–</text><text x="508" y="354">–</text><text x="508" y="410">–</text></g>
+
+  <!-- ============ Akte ============ -->
+  <rect x="560" y="88" width="48" height="48" rx="10" fill="#dfeaf1"/>
+  <rect x="571" y="99" width="26" height="18" rx="3" fill="#9fb3c0"/><rect x="576" y="119" width="16" height="5" rx="2" fill="#9fb3c0"/>
+  <text x="622" y="108" class="h">Bearbeitungszentrum</text>
+  <text x="622" y="127" class="s">SN 24-1087 · Baujahr 2021 · Werk Nord</text>
+  <rect x="1010" y="98" width="90" height="24" rx="12" fill="#e9f7f2"/>
+  <circle cx="1025" cy="110" r="4" fill="#24b38a"/>
+  <text x="1035" y="114" class="chip" style="fill:#17805f">Läuft</text>
+
+  <g fill="#f4f8fa">
+    <rect x="560" y="150" width="262" height="58" rx="10"/><rect x="836" y="150" width="264" height="58" rx="10"/>
+  </g>
+  <text x="576" y="171" class="k">STANDORT</text><text x="852" y="171" class="k">SERVICEPARTNER</text>
+  <text x="576" y="193" class="t">Werk Nord · Halle 2</text><text x="852" y="193" class="t">Servicepartner Nord</text>
+  <text x="806" y="193" text-anchor="end" class="chip" style="fill:#17805f">Ändern</text>
+  <text x="1084" y="193" text-anchor="end" class="chip" style="fill:#17805f">Ändern</text>
+
+  <!-- Funktionen -->
+  <rect x="560" y="222" width="262" height="58" rx="10" fill="#17805f"/>
+  <g fill="#fff" stroke="#e3ebf0" stroke-width="1.5">
+    <rect x="836" y="222" width="264" height="58" rx="10"/>
+    <rect x="560" y="290" width="262" height="58" rx="10"/><rect x="836" y="290" width="264" height="58" rx="10"/>
+    <rect x="560" y="358" width="262" height="58" rx="10"/><rect x="836" y="358" width="264" height="58" rx="10"/>
+  </g>
+
+  <path d="M576 243H594M585 234V252" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="606" y="246" class="t" style="fill:#fff">Serviceanfrage stellen</text>
+  <text x="606" y="264" class="s" style="fill:#fff;fill-opacity:.85">1 offene Anfrage ansehen</text>
+
+  <path d="M852 236H862L867 241V257H852Z" class="ic"/><path d="M856 247H863M856 252H863" class="ic"/>
+  <text x="882" y="246" class="t">Dokumentation</text>
+  <text x="882" y="264" class="s">14 Dokumente, Suche mit KI</text>
+
+  <rect x="576" y="304" width="18" height="17" rx="3" class="ic"/><path d="M576 310H594M581 301V306M589 301V306" class="ic"/>
+  <text x="606" y="314" class="t">Wartung</text>
+  <text x="606" y="332" class="s">Nächste fällig am 14.10.</text>
+
+  <circle cx="860" cy="319" r="9" class="ic"/><path d="M860 314V319L864 322" class="ic"/>
+  <text x="882" y="314" class="t">Maschinenhistorie</text>
+  <text x="882" y="332" class="s">Anfragen, Wartungen, Bestellungen</text>
+
+  <circle cx="585" cy="387" r="9" class="ic"/><circle cx="585" cy="387" r="3.5" class="ic"/>
+  <text x="606" y="382" class="t">Ersatzteile</text>
+  <text x="606" y="400" class="s">Explosionszeichnung, Warenkorb</text>
+
+  <path d="M853 378H867L865 398H855Z" class="ic"/><path d="M856 385H864" class="ic"/>
+  <text x="882" y="382" class="t">Verbrauchsmaterial</text>
+  <text x="882" y="400" class="s">Öl, Filter, Schmierstoffe</text>
+
+  <!-- Absprung -->
+  <text x="560" y="446" class="k">ABSPRUNG IN IHRE SYSTEME</text>
+  <g fill="#e3eef5">
+    <rect x="560" y="458" width="176" height="28" rx="14"/><rect x="746" y="458" width="104" height="28" rx="14"/><rect x="860" y="458" width="112" height="28" rx="14"/>
+  </g>
+  <g class="chip"><text x="576" y="476.5">Teilekatalog (Quanos)</text><text x="762" y="476.5">Webshop</text><text x="876" y="476.5">IoT-Portal</text></g>
+  <g fill="none" stroke="#1c638c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M714 468L722 468L722 476M722 468L713 477"/>
+    <path d="M828 468L836 468L836 476M836 468L827 477"/>
+    <path d="M950 468L958 468L958 476M958 468L949 477"/>
+  </g>
+</svg>

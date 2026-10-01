@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-label="Die Maschine im Mittelpunkt: In der Mitte die Maschine SN 24-1087. Auf dem inneren Ring ihre Akte mit Dokumentation und KI, Serviceanfragen, Wartung, Ersatzteilen, IoT-Status und Historie. Auf dem äußeren Ring die Beteiligten: Ihre Kunden, Händler und Servicepartner, Techniker und Ihr Serviceteam. Alle arbeiten an derselben Akte, jeder sieht nur, was für ihn freigegeben ist.">
+  <style>
+    text { font-family: "Work Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .n { font-size: 15px; font-weight: 600; fill: #175173; }
+    .d { font-size: 12px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .p { font-size: 16px; font-weight: 600; fill: #175173; text-anchor: middle; }
+    .ps { font-size: 12px; fill: #6f777c; text-anchor: middle; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .ic { fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .orbit { stroke-dasharray: 3 9; animation: orbit 40s linear infinite; }
+    .orbit2 { stroke-dasharray: 2 7; animation: orbit 60s linear infinite reverse; }
+    @keyframes orbit { to { stroke-dashoffset: -600; } }
+    .pulse { transform-origin: 600px 300px; animation: pulse 3.6s ease-out infinite; }
+    @keyframes pulse { 0% { transform: scale(1); opacity: .45; } 100% { transform: scale(1.32); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .orbit, .orbit2, .pulse { animation: none; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f0f5"/>
+      <stop offset="1" stop-color="#f7fafc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".12" r=".55">
+      <stop offset="0" stop-color="#24b38a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#24b38a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spot" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset=".55" stop-color="#dcebf3" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#dcebf3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24b38a"/>
+      <stop offset="1" stop-color="#1c638c"/>
+    </linearGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#175173"/>
+      <stop offset="1" stop-color="#1c638c"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef3f6"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#c9d9e3"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0f3a53" flood-opacity=".18"/>
+    </filter>
+    <filter id="shadow-sm" x="-40%" y="-40%" width="180%" height="190%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0f3a53" flood-opacity=".13"/>
+    </filter>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1200" height="620" fill="url(#bg)"/>
+  <rect width="1200" height="620" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="620" fill="url(#glow)"/>
+  <ellipse cx="600" cy="300" rx="340" ry="280" fill="url(#spot)"/>
+
+  <!-- Umlaufbahnen -->
+  <clipPath id="seiten"><rect x="0" y="198" width="300" height="204"/><rect x="900" y="198" width="300" height="204"/></clipPath>
+  <ellipse cx="600" cy="300" rx="536" ry="299" fill="none" stroke="#b8cbd7" stroke-width="1.5" class="orbit2" clip-path="url(#seiten)"/>
+  <ellipse cx="600" cy="300" rx="255" ry="195" fill="none" stroke="#24b38a" stroke-opacity=".55" stroke-width="2" class="orbit"/>
+
+  <!-- ============ Maschine ============ -->
+  <circle cx="600" cy="300" r="118" fill="none" stroke="#24b38a" stroke-width="2" class="pulse"/>
+  <circle cx="600" cy="300" r="118" fill="#fff" filter="url(#shadow)"/>
+  <circle cx="600" cy="300" r="118" fill="none" stroke="url(#ring)" stroke-width="5"/>
+  <circle cx="600" cy="300" r="102" fill="#f2f6f9"/>
+
+  <rect x="648" y="214" width="5" height="24" rx="2" fill="#9fb3c0"/>
+  <rect x="642" y="200" width="17" height="10" rx="3" fill="#24b38a"/>
+  <rect x="642" y="210" width="17" height="7" rx="2" fill="#d7e2e9"/>
+  <rect x="536" y="236" width="128" height="94" rx="12" fill="url(#body)" stroke="#c3d4de" stroke-width="1.5"/>
+  <path d="M548 236H652A12 12 0 0 1 664 248V252H536V248A12 12 0 0 1 548 236Z" fill="url(#hub)"/>
+  <rect x="548" y="262" width="64" height="56" rx="6" fill="#dfeaf1" stroke="#c3d4de" stroke-width="1.5"/>
+  <rect x="572" y="266" width="16" height="22" rx="2" fill="#9fb3c0"/>
+  <path d="M576 288H584L582 298H578Z" fill="#9fb3c0"/>
+  <rect x="556" y="306" width="48" height="7" rx="2" fill="#b3c6d2"/>
+  <rect x="622" y="262" width="32" height="56" rx="5" fill="#1d2a33"/>
+  <rect x="627" y="267" width="22" height="16" rx="2" fill="#24b38a" fill-opacity=".9"/>
+  <path d="M630 279L635 274L639 277L645 271" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#6f8796"><circle cx="631" cy="293" r="3"/><circle cx="640" cy="293" r="3"/><circle cx="631" cy="303" r="3"/></g>
+  <circle cx="640" cy="303" r="3.4" fill="#e5484d"/>
+  <rect x="544" y="330" width="22" height="6" rx="2" fill="#9fb3c0"/><rect x="634" y="330" width="22" height="6" rx="2" fill="#9fb3c0"/>
+  <text x="600" y="362" text-anchor="middle" class="n" style="font-size:16px">Ihre Maschine</text>
+  <text x="600" y="380" text-anchor="middle" class="d" style="font-size:11px;letter-spacing:.08em">SN 24-1087</text>
+
+  <!-- ============ Akte: innerer Ring ============ -->
+  <g filter="url(#shadow-sm)" fill="#fff">
+    <circle cx="600" cy="105" r="30"/><circle cx="821" cy="202" r="30"/><circle cx="821" cy="398" r="30"/>
+    <circle cx="600" cy="495" r="30"/><circle cx="379" cy="398" r="30"/><circle cx="379" cy="202" r="30"/>
+  </g>
+  <g fill="#e9f7f2"><circle cx="600" cy="105" r="23"/><circle cx="821" cy="398" r="23"/><circle cx="379" cy="398" r="23"/></g>
+  <g fill="#e3eef5"><circle cx="821" cy="202" r="23"/><circle cx="600" cy="495" r="23"/><circle cx="379" cy="202" r="23"/></g>
+
+  <!-- Dokumentation -->
+  <g class="ic" stroke="#17805f"><path d="M592 94H604L610 100V116H592Z"/><path d="M604 94V100H610M596 105H606M596 110H604"/></g>
+  <path d="M614 90L615.5 93.5L619 95L615.5 96.5L614 100L612.5 96.5L609 95L612.5 93.5Z" fill="#24b38a"/>
+  <!-- Serviceanfragen -->
+  <path d="M810 193A4 4 0 0 1 814 189H828A4 4 0 0 1 832 193V205A4 4 0 0 1 828 209H819L812 215V209A4 4 0 0 1 810 205Z" class="ic" stroke="#1c638c"/>
+  <g fill="#1c638c"><circle cx="816" cy="199" r="1.6"/><circle cx="821" cy="199" r="1.6"/><circle cx="826" cy="199" r="1.6"/></g>
+  <!-- Wartung -->
+  <g class="ic" stroke="#17805f"><rect x="810" y="389" width="22" height="20" rx="3"/><path d="M810 395H832M816 386V391M826 386V391"/><path d="M816 402L819.5 405L826 399"/></g>
+  <!-- Ersatzteile -->
+  <circle cx="600" cy="495" r="10" fill="none" stroke="#1c638c" stroke-width="4.5" stroke-dasharray="3.2 2.05"/>
+  <circle cx="600" cy="495" r="7" fill="none" stroke="#1c638c" stroke-width="2.2"/>
+  <circle cx="600" cy="495" r="2.6" fill="#1c638c"/>
+  <!-- IoT-Status -->
+  <g class="ic" stroke="#17805f"><path d="M372 405A10 10 0 0 1 372 391M386 391A10 10 0 0 1 386 405M367 410A17 17 0 0 1 367 386M391 386A17 17 0 0 1 391 410"/></g>
+  <circle cx="379" cy="398" r="3.5" fill="#17805f"/>
+  <!-- Historie -->
+  <g class="ic" stroke="#1c638c"><circle cx="379" cy="202" r="11"/><path d="M379 195V202L384 206"/></g>
+
+  <!-- Beschriftungen innerer Ring -->
+  <text x="600" y="54" text-anchor="middle" class="n">Dokumentation und KI</text>
+  <text x="600" y="70" text-anchor="middle" class="d">Antworten mit Quellenangabe</text>
+  <text x="866" y="198" class="n">Serviceanfragen</text>
+  <text x="866" y="215" class="d">Ticket und Chat am Vorgang</text>
+  <text x="866" y="394" class="n">Wartung</text>
+  <text x="866" y="411" class="d">Checkliste und Nachweis</text>
+  <text x="600" y="547" text-anchor="middle" class="n">Ersatzteile</text>
+  <text x="600" y="563" text-anchor="middle" class="d">aus der Zeichnung in den Warenkorb</text>
+  <text x="334" y="394" text-anchor="end" class="n">IoT-Status</text>
+  <text x="334" y="411" text-anchor="end" class="d">aus Ihrer IoT-Plattform</text>
+  <text x="334" y="198" text-anchor="end" class="n">Historie</text>
+  <text x="334" y="215" text-anchor="end" class="d">jede Anfrage, jede Wartung</text>
+
+  <!-- ============ Beteiligte: äußerer Ring ============ -->
+  <g filter="url(#shadow-sm)">
+    <circle cx="136" cy="150" r="44" fill="#7fd6b8"/>
+    <circle cx="1064" cy="150" r="44" fill="#b7d4e6"/>
+    <circle cx="136" cy="450" r="44" fill="#f3d58a"/>
+    <circle cx="1064" cy="450" r="44" fill="#1c638c"/>
+  </g>
+  <g fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#0f3a53" transform="translate(0 -22) translate(136 172) scale(1.45) translate(-136 -172)"><circle cx="136" cy="165" r="7"/><path d="M123 186C123 178 129 174 136 174C143 174 149 178 149 186"/></g>
+    <g stroke="#0f3a53" transform="translate(0 -22) translate(1064 172) scale(1.45) translate(-1064 -172)"><path d="M1052 186V166L1064 158L1076 166V186Z"/><path d="M1060 186V176H1068V186"/></g>
+    <g stroke="#0f3a53" transform="translate(0 22) translate(136 428) scale(1.45) translate(-136 -428)"><path d="M144 419A7 7 0 0 0 134 428L126 436A2.5 2.5 0 0 0 130 440L138 432A7 7 0 0 0 147 422L143 426L140 423Z"/></g>
+    <g stroke="#fff" transform="translate(0 22) translate(1064 428) scale(1.45) translate(-1064 -428)"><path d="M1051 440V424L1057 428V422L1063 426V420L1077 420V440Z"/><path d="M1057 434H1059M1063 434H1065M1069 434H1071"/></g>
+  </g>
+
+  <text x="136" y="76" class="p">Ihre Kunden</text>
+  <text x="136" y="94" class="ps">Betreiber und Instandhalter</text>
+  <text x="1064" y="76" class="p">Händler und Servicepartner</text>
+  <text x="1064" y="94" class="ps">betreuen Ihre Kunden vor Ort</text>
+  <text x="136" y="520" class="p">Techniker</text>
+  <text x="136" y="538" class="ps">warten und reparieren</text>
+  <text x="1064" y="520" class="p">Ihr Serviceteam</text>
+  <text x="1064" y="538" class="ps">Service-Konsole und Reporting</text>
+
+  <!-- Berechtigungen -->
+  <rect x="452" y="582" width="296" height="28" rx="14" fill="#175173"/>
+  <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"><rect x="470" y="595" width="10" height="8" rx="2"/><path d="M472 595V592A3 3 0 0 1 478 592V595"/></g>
+  <text x="488" y="600.5" class="d" style="fill:#fff;font-weight:600;font-size:11.5px">Eine Akte für alle, jeder sieht nur seinen Teil</text>
+</svg>

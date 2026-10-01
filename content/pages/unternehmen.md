@@ -1,5 +1,6 @@
 ---
 title: "Unternehmen"
+description: "ApproLogic GmbH, Frankfurt am Main: seit 2006 Software für den After Sales im Maschinenbau. Kontakt und Demo anfragen."
 section: "unternehmen"
 breadcrumbs: [{ label: "Unternehmen", href: "" }]
 ---

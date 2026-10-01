@@ -1,0 +1,23 @@
+# systemd-Dienst für den Mail-Dienst des Kontaktformulars.
+# Installation: siehe server/README.md
+[Unit]
+Description=ApproLogic Kontaktformular (Mailgun)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /opt/apprologic-kontakt/kontaktformular.mjs
+EnvironmentFile=/etc/apprologic-kontakt.env
+Restart=on-failure
+RestartSec=5
+
+# Eigener, unprivilegierter Benutzer ohne Schreibrechte
+DynamicUser=yes
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+
+[Install]
+WantedBy=multi-user.target

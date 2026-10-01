@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-label="Drei Sichten auf dieselbe Maschinenakte: Ihre Kunden sehen in der App ihre Maschine SN 24-1087 mit offener Anfrage, KI-Assistent, nächster Wartung und Warenkorb. Händler und Techniker arbeiten am Tablet die Wartungscheckliste für dieselbe Maschine ab. Ihr Serviceteam bearbeitet in der Service-Konsole die Anfrage mit internen Notizen und Kennzahlen. Darunter verbindet die eine Maschinenakte alle drei: ein Datenstand für alle, jeder sieht nur, was für ihn freigegeben ist.">
+  <style>
+    text { font-family: "Work Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .t { font-size: 12.5px; font-weight: 600; fill: #175173; }
+    .s { font-size: 11px; fill: #6f777c; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .k { font-size: 9.5px; font-weight: 700; letter-spacing: .07em; fill: #8a969d; }
+    .w { fill: #fff; }
+    .cap { font-size: 12.5px; font-weight: 700; letter-spacing: .08em; fill: #17805f; text-anchor: middle; }
+    .sub { font-size: 11.5px; fill: #6f777c; text-anchor: middle; font-family: "Open Sans", "Segoe UI", Arial, sans-serif; }
+    .flow { stroke-dasharray: 2 10; animation: flow 1.4s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: 24; } }
+    @media (prefers-reduced-motion: reduce) { .flow { animation: none; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8f0f5"/>
+      <stop offset="1" stop-color="#f7fafc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".82" cy=".12" r=".55">
+      <stop offset="0" stop-color="#24b38a" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#24b38a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hub" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#175173"/>
+      <stop offset="1" stop-color="#1c638c"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#24b38a"/>
+      <stop offset="1" stop-color="#1c638c"/>
+    </linearGradient>
+    <linearGradient id="stand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9d4dc"/>
+      <stop offset="1" stop-color="#eef3f6"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="1.2" fill="#c9d9e3"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0f3a53" flood-opacity=".22"/>
+    </filter>
+    <clipPath id="ph"><rect x="100" y="80" width="180" height="340" rx="22"/></clipPath>
+    <clipPath id="tb"><rect x="362" y="108" width="416" height="296" rx="8"/></clipPath>
+    <clipPath id="mo"><rect x="832" y="82" width="316" height="306" rx="4"/></clipPath>
+  </defs>
+
+  <!-- Hintergrund -->
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <rect width="1200" height="560" fill="url(#dots)" opacity=".7"/>
+  <rect width="1200" height="560" fill="url(#glow)"/>
+
+  <!-- Überschriften -->
+  <text x="190" y="40" class="cap">IHRE KUNDEN</text><text x="190" y="57" class="sub">in der App</text>
+  <text x="570" y="40" class="cap">HÄNDLER UND TECHNIKER</text><text x="570" y="57" class="sub">am Tablet, vor Ort</text>
+  <text x="990" y="40" class="cap">IHR SERVICETEAM</text><text x="990" y="57" class="sub">in der Service-Konsole</text>
+
+  <!-- Verbindungen zur Akte -->
+  <g fill="none" stroke="#24b38a" stroke-width="3" stroke-linecap="round" class="flow">
+    <path d="M190 432V470"/><path d="M570 418V470"/><path d="M990 434V470"/>
+  </g>
+
+  <!-- ============ Smartphone: Kunde ============ -->
+  <rect x="90" y="70" width="200" height="360" rx="30" fill="#1d2a33" filter="url(#shadow)"/>
+  <rect x="100" y="80" width="180" height="340" rx="22" fill="#fff"/>
+  <g clip-path="url(#ph)"><rect x="100" y="80" width="180" height="62" fill="url(#hub)"/></g>
+  <rect x="166" y="86" width="48" height="11" rx="5.5" fill="#1d2a33"/>
+  <text x="114" y="117" class="t w" style="font-size:13px">Bearbeitungszentrum</text>
+  <circle cx="118" cy="130" r="3.5" fill="#7fd6b8"/>
+  <text x="126" y="134" class="s w" style="font-size:10px">SN 24-1087 · Läuft</text>
+
+  <rect x="112" y="152" width="156" height="62" rx="9" fill="#f4f8fa"/>
+  <text x="122" y="168" class="k">ANFRAGE #4752</text>
+  <rect x="122" y="174" width="80" height="15" rx="7.5" fill="#e3eef5"/>
+  <text x="162" y="184.5" text-anchor="middle" class="s" style="font-size:9.5px;fill:#1c638c;font-weight:600">In Bearbeitung</text>
+  <text x="122" y="205" class="s" style="fill:#175173;font-size:10.5px">„Schmierfett ist unterwegs.“</text>
+
+  <rect x="112" y="222" width="156" height="30" rx="15" fill="#fff" stroke="#bfe6d6"/>
+  <path d="M127 230L129 235L134 237L129 239L127 244L125 239L120 237L125 235Z" fill="#17805f"/>
+  <text x="140" y="241" class="s" style="font-size:10.5px">KI-Assistent fragen …</text>
+
+  <rect x="112" y="260" width="156" height="40" rx="9" fill="#f4f8fa"/>
+  <text x="122" y="276" class="k">WARTUNG</text><text x="122" y="292" class="t" style="font-size:11.5px">Fällig am 14.10.</text>
+  <rect x="112" y="308" width="156" height="40" rx="9" fill="#f4f8fa"/>
+  <text x="122" y="324" class="k">ERSATZTEILE</text><text x="122" y="340" class="t" style="font-size:11.5px">3 im Warenkorb</text>
+  <rect x="112" y="362" width="156" height="34" rx="9" fill="#17805f"/>
+  <text x="190" y="383" text-anchor="middle" class="t w" style="font-size:11.5px">Serviceanfrage stellen</text>
+
+  <!-- ============ Tablet: Händler und Techniker ============ -->
+  <rect x="350" y="96" width="440" height="320" rx="22" fill="#1d2a33" filter="url(#shadow)"/>
+  <rect x="362" y="108" width="416" height="296" rx="8" fill="#fff"/>
+  <g clip-path="url(#tb)"><rect x="362" y="108" width="416" height="44" fill="url(#hub)"/></g>
+  <text x="378" y="135" class="t w" style="font-size:13px">Halbjahreswartung · SN 24-1087</text>
+  <rect x="644" y="119" width="120" height="22" rx="11" fill="#fff" fill-opacity=".16"/>
+  <text x="704" y="134" text-anchor="middle" class="s w" style="font-weight:600;font-size:10.5px">Servicepartner Nord</text>
+
+  <g fill="#f4f8fa"><rect x="378" y="164" width="384" height="36" rx="8"/><rect x="378" y="208" width="384" height="36" rx="8"/><rect x="378" y="252" width="384" height="36" rx="8"/></g>
+  <rect x="378" y="296" width="384" height="36" rx="8" fill="#e9f7f2" stroke="#24b38a" stroke-width="1.5"/>
+  <g fill="#24b38a"><circle cx="398" cy="182" r="9"/><circle cx="398" cy="226" r="9"/><circle cx="398" cy="270" r="9"/></g>
+  <g fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M394 182L397 185L402 179"/><path d="M394 226L397 229L402 223"/><path d="M394 270L397 273L402 267"/></g>
+  <circle cx="398" cy="314" r="8" fill="#fff" stroke="#24b38a" stroke-width="2"/>
+  <g class="t" style="font-size:12px"><text x="416" y="186">Funktionstest</text><text x="416" y="230">Sicherheitsschalter</text><text x="416" y="274">Hydraulikdruck</text><text x="416" y="318">Filter tauschen</text></g>
+  <g class="t" text-anchor="end" style="font-size:12px;fill:#17805f"><text x="748" y="186">i. O.</text><text x="748" y="230">i. O.</text><text x="748" y="274">182 bar</text></g>
+  <rect x="664" y="303" width="84" height="22" rx="11" fill="#fff" stroke="#bfe6d6"/>
+  <text x="706" y="318" text-anchor="middle" class="s" style="font-size:10px;fill:#17805f;font-weight:600">+ Foto</text>
+
+  <text x="378" y="364" class="s">3 von 4 erledigt</text>
+  <rect x="378" y="372" width="220" height="6" rx="3" fill="#e3ebf0"/><rect x="378" y="372" width="165" height="6" rx="3" fill="#24b38a"/>
+  <rect x="644" y="352" width="118" height="34" rx="9" fill="#17805f"/>
+  <text x="703" y="373.5" text-anchor="middle" class="t w" style="font-size:12px">Quittieren</text>
+
+  <!-- ============ Monitor: Serviceteam ============ -->
+  <path d="M966 400H1014L1022 428H958Z" fill="url(#stand)"/>
+  <rect x="932" y="426" width="116" height="8" rx="4" fill="#c9d4dc"/>
+  <rect x="820" y="70" width="340" height="330" rx="12" fill="#1d2a33" filter="url(#shadow)"/>
+  <rect x="832" y="82" width="316" height="306" rx="4" fill="#fff"/>
+  <g clip-path="url(#mo)"><rect x="832" y="82" width="316" height="30" fill="#f4f8fa"/></g>
+  <path d="M832 112H1148M980 112V388" stroke="#e3ebf0" stroke-width="1.2"/>
+  <g fill="#d3dee5"><circle cx="846" cy="97" r="3.5"/><circle cx="858" cy="97" r="3.5"/><circle cx="870" cy="97" r="3.5"/></g>
+  <text x="884" y="101" class="s" style="font-size:10.5px;fill:#175173;font-weight:600">Service-Konsole</text>
+
+  <text x="844" y="132" class="k">ANFRAGEN</text>
+  <rect x="840" y="140" width="132" height="34" rx="6" fill="#e9f7f2"/><rect x="840" y="140" width="3" height="34" rx="1.5" fill="#17805f"/>
+  <text x="850" y="155" class="t" style="font-size:11px">#4752 Spindel heiß</text><text x="850" y="168" class="s" style="font-size:9.5px">Werk Nord · hoch</text>
+  <text x="850" y="195" class="t" style="font-size:11px">#4750 Sensor X2</text><text x="850" y="208" class="s" style="font-size:9.5px">Werk Süd</text>
+  <text x="850" y="235" class="t" style="font-size:11px">#4747 Ersatzteil</text><text x="850" y="248" class="s" style="font-size:9.5px">Werk Ost</text>
+  <text x="850" y="275" class="t" style="font-size:11px">#4741 Schulung</text><text x="850" y="288" class="s" style="font-size:9.5px">Werk Nord</text>
+  <g stroke="#eef3f6" stroke-width="1.2"><path d="M844 182H972M844 222H972M844 262H972M844 302H972"/></g>
+
+  <text x="992" y="134" class="t" style="font-size:12px">#4752 · Team Mechanik</text>
+  <rect x="992" y="144" width="144" height="40" rx="7" fill="#1c638c"/>
+  <text x="1002" y="161" class="s w" style="font-size:9.5px">An Kunde:</text>
+  <text x="1002" y="175" class="s w" style="font-size:10px">Schmierfett ist unterwegs.</text>
+  <rect x="992" y="192" width="144" height="54" rx="7" fill="#fff8e6" stroke="#f0dca8"/>
+  <text x="1002" y="208" class="k" style="fill:#8a5a00">INTERN</text>
+  <text x="1002" y="223" class="s" style="font-size:10px;fill:#175173">Ähnlicher Fall #4711:</text>
+  <text x="1002" y="237" class="s" style="font-size:10px;fill:#175173">Schmierleitung prüfen.</text>
+  <g fill="#f4f8fa"><rect x="992" y="256" width="68" height="52" rx="7"/><rect x="1068" y="256" width="68" height="52" rx="7"/></g>
+  <text x="1000" y="272" class="k" style="font-size:8.5px">Ø BEARB.</text><text x="1000" y="296" class="t" style="font-size:15px">6,4 h</text>
+  <text x="1076" y="272" class="k" style="font-size:8.5px">LÖSUNG</text><text x="1076" y="296" class="t" style="font-size:15px">72 %</text>
+  <rect x="992" y="318" width="144" height="28" rx="7" fill="#fff" stroke="#d3dee5"/>
+  <text x="1064" y="336.5" text-anchor="middle" class="s" style="font-size:10.5px;fill:#175173;font-weight:600">Weiterleiten</text>
+
+  <!-- ============ Gemeinsame Akte ============ -->
+  <rect x="140" y="470" width="920" height="60" rx="30" fill="#fff" filter="url(#shadow)"/>
+  <rect x="140" y="470" width="920" height="60" rx="30" fill="none" stroke="url(#ring)" stroke-width="2.5"/>
+  <circle cx="180" cy="500" r="20" fill="#e9f7f2"/>
+  <rect x="168" y="491" width="24" height="15" rx="3" fill="#1c638c"/><rect x="172" y="494" width="10" height="8" rx="1.5" fill="#dfeaf1"/><rect x="186" y="494" width="3" height="8" rx="1" fill="#8fb4cb"/><rect x="166" y="506" width="28" height="3" rx="1.5" fill="#175173"/>
+  <text x="212" y="496" class="t" style="font-size:15px">Eine Maschinenakte · SN 24-1087</text>
+  <text x="212" y="514" class="s" style="font-size:12px">Ein Datenstand für alle Beteiligten</text>
+  <rect x="770" y="486" width="270" height="28" rx="14" fill="#175173"/>
+  <g fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"><rect x="786" y="499" width="10" height="8" rx="2"/><path d="M788 499V496A3 3 0 0 1 794 496V499"/></g>
+  <text x="804" y="504.5" class="s w" style="font-size:11px;font-weight:600">Jeder sieht nur, was für ihn freigegeben ist</text>
+</svg>

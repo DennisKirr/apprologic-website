@@ -1,27 +1,33 @@
 ---
-title: "Ein Werkzeug für alle Maschinen, die Sie betreuen, vom Hersteller bereitgestellt."
+title: "Ihr Partnernetz arbeitet im selben Portal wie Ihr Team."
+description: "Händler und Servicepartner arbeiten im selben Portal wie Ihr Serviceteam: Dokumentation, Anfragen, Checklisten und Teilebestellung für die betreuten Maschinen."
 eyebrow: "Für Händler und Servicepartner"
-lead: "Als Händler oder Servicepartner stehen Sie zwischen Kunde und Hersteller. Sie brauchen die aktuelle Dokumentation, die richtige Teilenummer und einen kurzen Draht in den Herstellerservice, für jede Maschine Ihrer Kunden. Das Portal des Herstellers gibt Ihnen genau das, im Browser und als App."
+lead: "Ihre Händler und Servicepartner stehen zwischen Ihnen und Ihren Kunden. Damit sie gute Arbeit leisten, brauchen sie die aktuelle Dokumentation, die richtige Teilenummer und einen kurzen Draht in Ihren Service, für jede Maschine, die sie betreuen. Mit dem Service Pacemaker stellen Sie ihnen genau das bereit, im Browser und als App."
 section: "fuer-wen"
 breadcrumbs: [{ label: "Für wen", href: "/fuer-wen/" }, { label: "Für Händler und Servicepartner", href: "" }]
 ---
 
+## Was Sie Ihren Partnern bereitstellen
+
+- **Alles zur Maschine an einem Ort.** Dokumentation, Fehlerbäume, Wartungshistorie: für die Maschinen, die ein Partner betreut, und nur für diese.
+- **Einen direkten Draht zu Ihrem Service.** Serviceanfragen mit Fotos und Videos am Vorgang, statt E-Mail und Warteschleife. Ihre Partner sehen, wer bearbeitet und wie weit es ist.
+- **Sichere Teilebestellung.** Explosionszeichnung, Verwendungsnachweis, Warenkorb, Übergabe an Ihren Webshop.
+
 ## Was Sie davon haben
 
-- **Alles zur Maschine an einem Ort.** Dokumentation, Fehlerbäume, Bulletins, Wartungshistorie: für die Maschinen, die Sie betreuen, und nur für diese.
-- **Im Feld, auch ohne Netz.** Checklisten, Teilelisten und Warenkorb funktionieren offline; synchronisiert wird später.
-- **Direkter Draht zum Hersteller.** Serviceanfragen mit Fotos und Videos am Vorgang, statt E-Mail und Warteschleife. Sie sehen, wer bearbeitet und wie weit es ist.
-- **Teile richtig bestellen.** Explosionszeichnung, Verwendungsnachweis, Warenkorb, Übergabe an den Shop des Herstellers.
-- **Wartung nachweisen.** Quittierte Checklisten mit Messwerten und Fotos; der Nachweis liegt beim Hersteller und in der Maschinenakte.
+- **Transparenz über das Partnergeschäft.** Sie sehen, welche Maschinen Ihre Partner betreuen, was dort passiert und welche Wartungen fällig sind, auch bei Maschinen, die über Händler verkauft wurden.
+- **Nachweisbare Wartung.** Partner quittieren Checklisten mit Messwerten und Fotos; der Nachweis liegt bei Ihnen und in der Maschinenakte.
+- **Weniger Rückfragen, weniger Fehlbestellungen.** Partner finden Antworten und Teilenummern selbst, statt bei Ihrem Serviceteam anzurufen.
 
 ```image
-Techniker mit Tablet an der Maschine, App mit Checkliste
+/bilder/partner-checkliste.svg
+Wartungscheckliste in der App auf dem Tablet eines Servicepartners, im Hintergrund die Maschine: erledigte Prüfpunkte mit Messwert und Foto.
 ```
 
-*Der Zugang kommt vom Hersteller, der den Service Pacemaker einsetzt.*
+*Sie vergeben die Zugänge und legen fest, welcher Partner welche Kunden und Maschinen sieht.*
 
 ```cta
-Sind Sie Hersteller und möchten Ihr Partnernetz so ausstatten?
--> /fuer-wen/hersteller/ Für Hersteller
+Möchten Sie Ihr Partnernetz so ausstatten?
 -> /kontakt/ Demo anfragen
+-> /fuer-wen/hersteller/ Für Hersteller
 ```

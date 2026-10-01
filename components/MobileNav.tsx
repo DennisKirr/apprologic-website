@@ -8,7 +8,8 @@ export default function MobileNav() {
   return (
     <>
       <button className="burger" type="button" aria-expanded={open} aria-controls="mobile-nav" onClick={() => setOpen(!open)}>
-        Menü
+        <i aria-hidden="true" />
+        <span>Menü</span>
       </button>
       <nav id="mobile-nav" className={`mobile-nav${open ? " open" : ""}`} aria-label="Mobile Navigation">
         {navigation.map((sec) => (

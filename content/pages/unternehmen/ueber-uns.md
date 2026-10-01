@@ -1,44 +1,36 @@
 ---
-title: "Seit 2006 Software für den After Sales: aus Frankfurt, für Maschinen weltweit."
+title: "Seit 20 Jahren Software für den After Sales: aus Frankfurt, für Maschinen weltweit."
+description: "Über ApproLogic: seit 20 Jahren Software für den After Sales, von Ticketsystemen zu Serviceportalen für Kunden, Partner und Serviceteams. Aus Frankfurt am Main."
 eyebrow: "Über ApproLogic"
-lead: "ApproLogic wurde 2006 als Hersteller von Ticketsystemen gegründet. Aus der Erfahrung vieler Serviceprojekte entstand 2014 der Service Pacemaker: eine Plattform, die den Service nicht vom Ticket, sondern von der Maschine aus denkt."
+lead: "ApproLogic entwickelt seit 2006 Software, mit der Hersteller ihren Produktservice organisieren. Vom Ticketsystem für die Serviceorganisation bis zur Plattform, auf der Kunden, Partner und Serviceteam gemeinsam arbeiten."
 section: "unternehmen"
 breadcrumbs: [{ label: "Unternehmen", href: "/unternehmen/" }, { label: "Über ApproLogic", href: "" }]
 ---
 
-Heute arbeiten zwölf Spezialisten in Frankfurt, Zagreb und Pasadena (Kalifornien) an Produkt und Projekten, mit über 15 Jahren Prozess-Know-how im After Sales und Erfahrung aus Projekten weltweit.
+## Woher wir kommen
 
-## Wofür wir stehen
+Angefangen haben wir mit Ticketsystemen: Werkzeuge, mit denen eine Serviceorganisation ihre Anfragen verwaltet und steuert. Dabei haben wir früh erkannt, dass Service nicht an der Tür des Herstellers endet. Die Betreiber der Maschinen, ihre Instandhalter, die Techniker bei Händlern und Servicepartnern: Sie alle brauchen Zugang zu denselben Informationen.
 
-```tiles
-Die Maschine im Mittelpunkt.
-Unsere Datenmodelle und Prozesse sind für den Maschinenbau gebaut, nicht für den IT-Helpdesk.
+Deshalb haben wir unser Produkt nach außen geöffnet, um webbasierte und mobile Portale erweitert und daraus den Service Pacemaker gemacht: eine Plattform, die alle Beteiligten rund um die Maschine vernetzt.
 
-Standard vor Individualentwicklung.
-Zehn erprobte Module, angepasst an Ihr Design, Ihre Schnittstellen und Ihre Organisation.
+## Was uns antreibt
 
-Langfristige Partnerschaft.
-Wir betreiben, warten und entwickeln weiter, über Jahre.
+Wir begleiten unsere Kunden, vom Weltmarktführer bis zum klassischen Mittelstand, bei der Digitalisierung ihres Produktservice. Unsere Erfahrung aus 20 Jahren After Sales steckt in durchdachten, schnell einführbaren Standardbausteinen für Entstörung, Ersatzteile, Dokumentation und Wartung. Unsere beste Referenz sind die Anwender, die täglich mit unserer Software arbeiten, und die guten Bewertungen unserer Apps in den Stores.
 
-Qualität nachweisbar.
-Zertifiziertes Qualitätsmanagement nach ISO 9001 (DEKRA), German Innovation Award 2020, Innovationsförderung im ZIM des Bundeswirtschaftsministeriums.
-```
+## Warum der Service so wichtig ist
 
-## Zielgruppen
+Der After-Sales-Markt wird für Hersteller zum entscheidenden Faktor: für die Kundenzufriedenheit, für Up- und Cross-Selling und für das Ergebnis durch abrechenbare Leistungen und Ersatzteile. Dieser Bereich verdient bessere Werkzeuge als E-Mails und Excel-Tabellen.
 
-Maschinen- und Anlagenbau, Medizintechnik, Service Provider.
+Wer das Risiko einer eigenen Entwicklung scheut, findet in uns einen Partner, der ein individuelles Serviceportal auf bewährten Standards aufbaut: in Ihrem Design, mit Ihren Schnittstellen und in überschaubarer Zeit.
 
-## Team
-
-```image
-Porträt und Kurzvita der Geschäftsführung (Dennis Kirr, Diplom-Ingenieur, Geschäftsführer und Projektleiter) sowie Ansprechpartner für Vertrieb, Projekte und Support
-```
-
-```image
-Logoleiste Auszeichnungen und Zertifikate
+```numbers
+2006 | gegründet in Frankfurt am Main, seitdem spezialisiert auf den After Sales.
+42.300 | Nutzer in 78 Ländern arbeiten mit dem Service Pacemaker.
+ISO 9001 | zertifiziertes Qualitätsmanagement, geprüft von der DEKRA.
 ```
 
 ```cta
 Lernen Sie uns kennen.
 -> /kontakt/ Kontakt
+-> /produkt/ Zum Produkt
 ```

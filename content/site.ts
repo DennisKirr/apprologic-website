@@ -13,6 +13,7 @@ export const site = {
   address: ["ApproLogic GmbH", "Ostparkstraße 11", "60314 Frankfurt am Main"],
   phone: "+49 69 90435820",
   email: "info@apprologic.de",
+  url: "https://www.apprologic.de", // Adresse der Webseite ohne Schrägstrich am Ende; für Sitemap, robots.txt und Canonical-Links
 };
 
 export const navigation: NavSection[] = [
@@ -21,12 +22,16 @@ export const navigation: NavSection[] = [
     slug: "funktionen",
     label: "Funktionen",
     children: [
-      { slug: "funktionen/maschinen-kunden", label: "Maschinen, Kunden und Berechtigungen", description: "Installierte Basis, Registrierung, Zugriffsrechte" },
-      { slug: "funktionen/dokumentation-ki", label: "Dokumentation und KI-Wissensdatenbank", description: "Handbücher je Maschine, KI-Assistent mit Quellen" },
+      { slug: "funktionen/onboarding", label: "Onboarding und Registrierung", description: "Einladung, Aktivierung, Kollegen einladen" },
+      { slug: "funktionen/installierte-basis", label: "Installierte Basis (Maschinenliste)", description: "Maschinenliste, Registrierung, digitale Akte" },
+      { slug: "funktionen/dokumentation-ki", label: "Dokumentation und KI-Assistent", description: "Handbücher je Maschine, KI-Assistent mit Quellen" },
+      { slug: "funktionen/suche", label: "Globale Suche über alle Daten", description: "Volltext, unscharfe Suche und KI in einem Feld" },
       { slug: "funktionen/serviceanfragen", label: "Serviceanfragen und Kommunikation", description: "Assistent, Routing, Chat am Vorgang" },
       { slug: "funktionen/wartung", label: "Wartung und Checklisten", description: "Fällige Wartungen, Nachweis ins ERP" },
       { slug: "funktionen/ersatzteile", label: "Ersatzteile und Warenkorb", description: "Explosionszeichnung, Webshop-Übergabe" },
-      { slug: "funktionen/iot-reporting", label: "IoT, Betriebstagebuch und Reporting", description: "Maschinendaten, Historie, Kennzahlen" },
+      { slug: "funktionen/iot-integration", label: "IoT-Integration", description: "Maschinenstatus aus Ihrer IoT-Plattform" },
+      { slug: "funktionen/reporting", label: "Reporting", description: "Kennzahlen und Dashboards für die Serviceleitung" },
+      { slug: "funktionen/individualentwicklung", label: "Individualentwicklung", description: "Plantafel, Bluetooth und mehr" },
     ],
   },
   {
@@ -34,8 +39,8 @@ export const navigation: NavSection[] = [
     label: "Für wen",
     children: [
       { slug: "fuer-wen/hersteller", label: "Für Hersteller", description: "Ihr Service wird zur Plattform" },
-      { slug: "fuer-wen/haendler-servicepartner", label: "Für Händler und Servicepartner", description: "Ein Werkzeug für alle betreuten Maschinen" },
-      { slug: "fuer-wen/endkunden", label: "Für Endkunden", description: "Ihre Maschinen, Ihr Service, ein Login" },
+      { slug: "fuer-wen/haendler-servicepartner", label: "Für Händler und Servicepartner", description: "Ihr Partnernetz im selben Portal" },
+      { slug: "fuer-wen/endkunden", label: "Für Endkunden", description: "Self-Service für Ihre Kunden" },
     ],
   },
   {

@@ -21,6 +21,7 @@ eyebrow: "Kleine Zeile über der Überschrift"       # optional
 lead: "Einleitungstext unter der Überschrift"       # optional, dient auch als Meta-Beschreibung
 description: "Eigene Meta-Beschreibung"             # optional
 section: "funktionen"                                # markiert den aktiven Hauptmenüpunkt
+heroImage: { src: "/bilder/ki-assistent.svg", alt: "Bildbeschreibung" }   # optional: Bild rechts neben der Überschrift
 breadcrumbs: [{ label: "Funktionen", href: "/funktionen/" }, { label: "Wartung", href: "" }]
 prev: { label: "Serviceanfragen", href: "/funktionen/serviceanfragen/" }   # optional
 next: { label: "Ersatzteile", href: "/funktionen/ersatzteile/" }           # optional
@@ -54,7 +55,8 @@ Optionaler Text.
 ```
 
 ```image
-Beschreibung des Bildes (Platzhalter, bis echte Bilder eingebaut sind)
+/bilder/datei.svg                  (optional: Pfad zu einer Datei in public/, dahinter optional "logos" für eine Logoleiste)
+Beschreibung des Bildes             (Alt-Text; ohne Pfad erscheint ein Platzhalter)
 ```
 
 ```form
@@ -73,8 +75,8 @@ Der Inhalt von `out/` wird auf den Webserver kopiert. Interne Links enden mit `/
 
 ## Noch offen
 
-- Kontaktformular: Endpunkt in `components/ContactForm.tsx` eintragen (z. B. Formspark, Web3Forms oder eigene API); beim statischen Export gibt es kein Backend.
-- Impressum und Datenschutz von der bestehenden Seite übernehmen.
-- Bilder und Screenshots einbauen (`image`-Blöcke ersetzen; Dateien nach `public/`).
-- Design: `app/globals.css` enthält nur Platzhalter-Styles.
+- Kontaktformular: Mail-Dienst auf dem Hetzner-Server einrichten (Mailgun, siehe [server/README.md](server/README.md)).
+- Datenschutzerklärung rechtlich prüfen lassen. Sie geht davon aus, dass die Server-Logfiles nach 7 Tagen gelöscht werden und das Kontaktformular über den eigenen Server und Mailgun (EU-Region, mit Auftragsverarbeitungsvertrag) zugestellt wird.
+- Bilder und Screenshots einbauen (Datei nach `public/bilder/`, Pfad als erste Zeile im `image`-Block). Die Startseite hat bereits zwei Illustrationen.
+- Design: Farben, Schriften und Logo nach apprologic.de in `app/globals.css`; die Bild-Platzhalter werden durch echte Bilder ersetzt.
 - Englische Version: zweiter Inhaltsbaum, z. B. `content/pages/en/…`, plus Sprachumschalter.
