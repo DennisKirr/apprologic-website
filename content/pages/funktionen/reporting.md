@@ -1,5 +1,6 @@
 ---
 title: "Wissen, wo Ihr Service steht, und wohin er sich entwickelt."
+seoTitle: "Service-Reporting und Kennzahlen"
 description: "Reporting für die Serviceleitung: Anfragen, Bearbeitungszeiten, Erstlösungsquote und häufigste Ursachen, filterbar nach Zeitraum, Region, Team und Maschinentyp."
 eyebrow: "Reporting"
 lead: "Wie viele Anfragen kommen herein, wie schnell sind sie gelöst, und welche Maschinen machen die meiste Arbeit? Das Reporting beantwortet die Fragen Ihrer Serviceleitung aus den Daten, die im Portal ohnehin entstehen: ohne Excel-Listen und ohne eigenes Projekt."

@@ -1,5 +1,6 @@
 ---
 title: "Jede Wartung geplant, quittiert und nachgewiesen."
+seoTitle: "Wartungsmanagement mit digitaler Checkliste"
 description: "Wartung und Checklisten: fällige Wartungen je Maschine, Checkliste für den Techniker, quittierter Nachweis zurück ins ERP und in die Maschinenakte."
 eyebrow: "Wartung und Checklisten"
 lead: "Wartungspläne liegen im ERP, Checklisten auf Papier, Nachweise als Fotos auf dem Diensthandy. Bei einer Reklamation oder einem Garantiefall fehlt dann der Beleg. Im Service Pacemaker wird jede Wartung zu einem Vorgang an der Maschine: geplant, abgearbeitet, quittiert und jederzeit nachweisbar."

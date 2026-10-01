@@ -1,5 +1,6 @@
 ---
 title: "Eine Suche für alles: Dokumentation, Anfragen und Ersatzteile."
+seoTitle: "Globale Suche in Doku, Tickets und Teilen"
 description: "Globale Suche im Service Pacemaker: Volltext mit Unschärfe oder KI, über Dokumentation, Serviceanfragen und Ersatzteillisten, Treffer nach Quelle geordnet."
 eyebrow: "Globale Suche über alle Daten"
 lead: "Das Wissen über Ihre Maschinen steckt in Handbüchern, in gelösten Serviceanfragen und in Teilelisten. Der Service Pacemaker durchsucht alles auf einmal, klassisch nach Begriffen oder mit KI nach Bedeutung, und zeigt das Ergebnis übersichtlich nach Quellen geordnet."

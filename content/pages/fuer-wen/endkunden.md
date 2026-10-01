@@ -1,8 +1,9 @@
 ---
 title: "Ihre Kunden finden Antworten selbst, rund um die Uhr."
+seoTitle: "Kundenportal für Ihre Endkunden"
 description: "Was Ihre Kunden im Serviceportal tun: Maschinen registrieren, Handbücher finden, den KI-Assistenten fragen, Anfragen stellen und Ersatzteile identifizieren."
 eyebrow: "Für Endkunden"
-lead: "Ihre Kunden betreiben Maschinen, die laufen müssen. Wenn etwas nicht stimmt, wollen sie nicht in der Hotline warten, sondern das passende Handbuch, eine schnelle Antwort und einen Vorgang, den sie verfolgen können. Mit dem Service Pacemaker bieten Sie ihnen genau das, am PC oder in der App, unter Ihrem Namen."
+lead: "Ihre Kunden betreiben Maschinen, die laufen müssen. Wenn etwas nicht stimmt, wollen sie nicht in der Hotline warten, sondern das passende Handbuch, eine schnelle Antwort und einen Vorgang, den sie verfolgen können. Mit dem Service Pacemaker bieten Sie ihnen genau das: ein Kundenportal unter Ihrem Namen, am PC oder in der App."
 section: "fuer-wen"
 breadcrumbs: [{ label: "Für wen", href: "/fuer-wen/" }, { label: "Für Endkunden", href: "" }]
 ---

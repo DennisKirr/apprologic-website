@@ -1,8 +1,9 @@
 ---
 title: "Die After-Sales-Plattform für Ihre Kunden, Ihre Händler und Techniker und Ihr Serviceteam."
+seoTitle: "After-Sales-Plattform und Kundenportal"
 eyebrow: "Service Pacemaker – die After-Sales-Plattform für Hersteller"
 lead: "Der Service Pacemaker bringt alle zusammen, die rund um Ihre Maschinen arbeiten. Ihre Kunden finden Antworten, stellen Anfragen und legen Ersatzteile in den Warenkorb. Händler und Techniker betreuen und warten die Maschinen. Ihr Serviceteam bearbeitet, steuert und wertet aus. Alles in einer Plattform, organisiert von der Maschine aus."
-description: "Der Service Pacemaker ist die After-Sales-Plattform für Hersteller: für ihre Kunden, für Händler und Techniker und für das eigene Serviceteam. Jede Maschine hat darin eine digitale Akte."
+description: "Service Pacemaker: After-Sales-Plattform und Kundenportal für Maschinenbauer, ihre Kunden, Händler und Techniker. Jede Maschine hat darin eine digitale Akte."
 section: "produkt"
 breadcrumbs: [{ label: "Produkt", href: "" }]
 ---

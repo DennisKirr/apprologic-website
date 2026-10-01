@@ -1,5 +1,6 @@
 ---
 title: "Für wen"
+seoTitle: "Für Hersteller, Händler und Endkunden"
 description: "Für wen der Service Pacemaker gedacht ist: Hersteller führen die Plattform ein, ihre Kunden, Händler und Techniker arbeiten im Portal."
 lead: "Der Hersteller führt den Service Pacemaker ein und stellt das Portal seinen Kunden, Händlern und Technikern zur Verfügung. Drei Sichten auf dasselbe System."
 section: "fuer-wen"

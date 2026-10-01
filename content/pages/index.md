@@ -1,9 +1,9 @@
 ---
 title: "Ihr gesamter Service rund um jede installierte Maschine. In einer Plattform. Für Kunden, Händler und Ihr Team."
 eyebrow: "Service Pacemaker® – die After-Sales-Plattform mit KI für den Maschinenbau"
-lead: "Die Plattform, mit der Sie als Hersteller Ihren Kunden, Händlern und Technikern ein Serviceportal bereitstellen. Jede installierte Maschine hat darin eine Akte: Dokumentation, Serviceanfragen, Wartungen, Ersatzteile. Ein KI-Assistent beantwortet Fragen aus Ihren eigenen Dokumenten, mit Quellenangabe. Was offen bleibt, bearbeitet Ihr Serviceteam in der Service-Konsole – statt in E-Mails, Anrufen und Dateiablagen."
+lead: "Die Plattform, mit der Sie als Hersteller Ihren Kunden, Händlern und Technikern ein eigenes Kundenportal bereitstellen. Jede installierte Maschine hat darin eine Akte: Dokumentation, Serviceanfragen, Wartungen, Ersatzteile. Ein KI-Assistent beantwortet Fragen aus Ihren eigenen Dokumenten, mit Quellenangabe. Was offen bleibt, bearbeitet Ihr Serviceteam in der Service-Konsole – statt in E-Mails, Anrufen und Dateiablagen."
 heroImage: { src: "/bilder/ki-assistent.svg", alt: "KI-Assistent im Service Pacemaker: Auf die Frage, was beim Tausch der Glasscheibe zu beachten ist, antwortet die KI in drei Schritten und nennt Wartungshandbuch und Seite als Quelle." }
-description: "Service Pacemaker: die After-Sales-Plattform für den Maschinenbau. Dokumentation, Serviceanfragen, Wartung und Ersatzteile rund um jede installierte Maschine."
+description: "After-Sales-Plattform und Kundenportal für den Maschinenbau: Dokumentation mit KI, Serviceanfragen, Wartung und Ersatzteile für jede installierte Maschine."
 section: "start"
 ---
 
@@ -53,7 +53,7 @@ bearbeitet alle Anfragen in der Service-Konsole oder in Ihrem bestehenden Ticket
 -> /fuer-wen/hersteller/ Für Hersteller
 ```
 
-## Fertige Module für jeden Schritt im Service-Lebenszyklus
+## Fertige Module für Ihr Serviceportal, für jeden Schritt im Service-Lebenszyklus
 
 ```tiles
 Onboarding und Registrierung

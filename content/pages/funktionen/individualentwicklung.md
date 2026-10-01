@@ -1,5 +1,6 @@
 ---
 title: "Ihr Service ist besonders. Ihr Portal darf es auch sein."
+seoTitle: "Individuelle Erweiterungen fürs Serviceportal"
 description: "Individualentwicklung durch ApproLogic: Erweiterungen wie eine Plantafel für Techniker oder eine Bluetooth-Verbindung zur Maschine, auf derselben Plattform."
 eyebrow: "Individualentwicklung"
 lead: "Der Service Pacemaker deckt ab, was die meisten Hersteller im After-Sales brauchen. Und manchmal braucht Ihr Service etwas, das es so nirgends gibt. Dann entwickeln wir es für Sie: auf derselben Plattform, mit denselben Daten und Berechtigungen."

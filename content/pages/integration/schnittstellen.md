@@ -1,5 +1,6 @@
 ---
 title: "Ihre Systeme bleiben führend. Das Portal bringt ihre Daten zu Kunden, Händlern und Technikern."
+seoTitle: "Schnittstellen zu SAP, ERP und Webshop"
 description: "Schnittstellen des Service Pacemaker: SAP und andere ERP-Systeme, Teilekatalog, Webshop, Dateiablage, Ticketsystem, IoT-Plattform und Identity Provider."
 eyebrow: "Schnittstellen"
 lead: "Ihr ERP-System, Ihren Teilekatalog und Ihren Webshop müssen Sie nicht ersetzen. Der Service Pacemaker holt sich, was an der Maschine gebraucht wird, und meldet zurück, was im Feld passiert – automatisch und nachvollziehbar."

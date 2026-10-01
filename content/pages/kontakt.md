@@ -1,5 +1,6 @@
 ---
 title: "Bereit für den nächsten Schritt? In 30 Minuten zeigen wir Ihnen das Portal mit Beispielen aus Ihrer Branche."
+seoTitle: "Kontakt und Demo anfragen"
 description: "Demo anfragen: In 30 Minuten zeigen wir Ihnen den Service Pacemaker mit Beispielen aus Ihrer Branche. ApproLogic GmbH, Frankfurt am Main."
 eyebrow: "Kontakt und Demo anfragen"
 section: "unternehmen"

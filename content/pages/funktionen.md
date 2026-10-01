@@ -1,6 +1,7 @@
 ---
 title: "Funktionen"
-description: "Alle Funktionen des Service Pacemaker im Überblick: Onboarding, installierte Basis, Dokumentation und KI, Suche, Serviceanfragen, Wartung, Ersatzteile, IoT-Integration und Reporting."
+seoTitle: "Funktionen des Service Pacemaker"
+description: "Alle Funktionen des Service Pacemaker: Onboarding, Maschinenakte, Dokumentation mit KI, Suche, Ticketsystem, Wartung, Ersatzteile, IoT und Reporting."
 lead: "Neun Funktionsbereiche, ein Prinzip: Alles hängt an der konkreten Maschine. Jeder Bereich ist für Ihre Kunden und Techniker im Portal und in der App nutzbar, für Ihr Team in der Service-Konsole."
 section: "funktionen"
 breadcrumbs: [{ label: "Funktionen", href: "" }]

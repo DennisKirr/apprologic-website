@@ -1,6 +1,7 @@
 ---
 title: "Der Status aus Ihrer IoT-Plattform, direkt an der Maschine im Portal."
-description: "IoT-Integration: Status und Fehlercodes aus Ihrer bestehenden IoT-Plattform direkt an der Maschine im Portal. Der Service Pacemaker sammelt selbst keine Maschinendaten."
+seoTitle: "IoT-Integration für das Serviceportal"
+description: "IoT-Integration: Status und Fehlercodes aus Ihrer bestehenden IoT-Plattform direkt an der Maschine im Serviceportal, ohne zweites IoT-Projekt."
 eyebrow: "IoT-Integration"
 lead: "Viele Hersteller erfassen Maschinendaten längst, in einer eigenen IoT-Plattform oder einer Lösung ihres Steuerungsanbieters. Der Service Pacemaker baut keine zweite auf. Er bindet Ihre bestehende an und zeigt die Daten dort, wo Service stattfindet: an der Maschine, am Vorgang, beim Techniker."
 section: "funktionen"

@@ -8,10 +8,13 @@ import { site } from "../content/site";
 const workSans = Work_Sans({ subsets: ["latin"], variable: "--font-head", display: "swap" });
 const openSans = Open_Sans({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 
+// Titel der Startseite (höchstens ca. 60 Zeichen, damit Google ihn nicht abschneidet)
+export const siteTitle = "Service Pacemaker: After-Sales-Plattform für Maschinenbauer";
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: "Service Pacemaker – After-Sales-Plattform für den Maschinenbau | ApproLogic", template: "%s | ApproLogic" },
-  description: "Service Pacemaker: die After-Sales-Plattform für den Maschinenbau. Dokumentation, Serviceanfragen, Wartung und Ersatzteile rund um jede installierte Maschine – für Kunden, Händler und Ihr Serviceteam.",
+  title: { default: siteTitle, template: "%s | ApproLogic" },
+  description: "Service Pacemaker: After-Sales-Plattform und Kundenportal für den Maschinenbau. Dokumentation mit KI, Serviceanfragen, Wartung und Ersatzteile.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

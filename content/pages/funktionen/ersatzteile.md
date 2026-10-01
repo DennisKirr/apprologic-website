@@ -1,5 +1,6 @@
 ---
 title: "Das richtige Teil beim ersten Mal, direkt aus der Explosionszeichnung in den Warenkorb."
+seoTitle: "Ersatzteilkatalog mit Warenkorb"
 description: "Ersatzteile im Service Pacemaker: Teile in der Explosionszeichnung identifizieren, in den Warenkorb legen und an Ihren Webshop oder Ihr ERP übergeben."
 eyebrow: "Ersatzteile und Warenkorb"
 lead: "Falsch bestellte Teile kosten doppelt: Versand, Zeit, ein zweiter Stillstand. Ursache ist fast immer die Identifikation am Telefon."

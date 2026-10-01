@@ -1,5 +1,6 @@
 ---
 title: "Seit 20 Jahren Software für den After Sales: aus Frankfurt, für Maschinen weltweit."
+seoTitle: "Über ApproLogic: Software für den After Sales"
 description: "Über ApproLogic: seit 20 Jahren Software für den After Sales, von Ticketsystemen zu Serviceportalen für Kunden, Partner und Serviceteams. Aus Frankfurt am Main."
 eyebrow: "Über ApproLogic"
 lead: "ApproLogic entwickelt seit 2006 Software, mit der Hersteller ihren Produktservice organisieren. Vom Ticketsystem für die Serviceorganisation bis zur Plattform, auf der Kunden, Partner und Serviceteam gemeinsam arbeiten."

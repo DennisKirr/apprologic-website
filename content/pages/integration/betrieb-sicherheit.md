@@ -1,5 +1,6 @@
 ---
 title: "Wir betreiben das Portal für Sie: in deutschen Rechenzentren, mit Support und Updates."
+seoTitle: "Betrieb, Sicherheit und Managed Services"
 description: "Betrieb, Sicherheit und Managed Services: deutsche Rechenzentren, drei Umgebungen, Updates, Support und DSGVO. ISO 9001 zertifiziert."
 eyebrow: "Betrieb, Sicherheit und Managed Services"
 lead: "ApproLogic stellt den Service Pacemaker als Application Service Provider bereit. Ihre Instanz läuft standardmäßig in einem deutschen Rechenzentrum."

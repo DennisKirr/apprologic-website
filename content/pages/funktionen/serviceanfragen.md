@@ -1,5 +1,6 @@
 ---
 title: "Vom Problem zur Lösung in einem Vorgang, ohne E-Mail-Ketten und Rückrufe."
+seoTitle: "Serviceanfragen und Ticketsystem"
 description: "Serviceanfragen im Service Pacemaker: Assistent in vier Schritten, Chat am Vorgang, mitgeliefertes Ticketsystem oder Anbindung an Ihr bestehendes."
 eyebrow: "Serviceanfragen und Kommunikation"
 lead: "Eine Störungsmeldung kommt per Mail, die Fotos per WhatsApp, die Rückfrage per Telefon. Drei Wochen später weiß niemand mehr, was vereinbart wurde."

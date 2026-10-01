@@ -1,6 +1,7 @@
 ---
 title: "Ihre installierte Basis: jede Maschine in einer Liste, jede mit ihrer digitalen Akte."
-description: "Die Maschinenliste im Service Pacemaker: alle installierten Maschinen Ihrer Kunden, jede mit digitaler Akte für Dokumentation, Anfragen, Wartung und Ersatzteile."
+seoTitle: "Installierte Basis und Maschinenakte"
+description: "Die Maschinenliste im Service Pacemaker: alle installierten Maschinen Ihrer Kunden, jede mit digitaler Akte für Doku, Anfragen, Wartung und Teile."
 eyebrow: "Installierte Basis (Maschinenliste)"
 lead: "Wer betreibt welche Maschine an welchem Standort, und wer betreut sie? Die Antwort liegt oft verteilt in ERP, Excel-Listen und im Kopf des Außendienstlers. Im Service Pacemaker steht sie in der Maschinenliste: alle Maschinen, die bei Ihren Kunden installiert sind, jede mit ihrer digitalen Akte."
 section: "funktionen"

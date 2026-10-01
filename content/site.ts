@@ -14,6 +14,23 @@ export const site = {
   phone: "+49 69 90435820",
   email: "info@apprologic.de",
   url: "https://www.apprologic.de", // Adresse der Webseite ohne Schrägstrich am Ende; für Sitemap, robots.txt und Canonical-Links
+  // Vorschaubild beim Teilen (LinkedIn, Teams, WhatsApp …), 1200 × 630, Vorlage in assets/vorschau.svg
+  shareImage: { src: "/vorschau.png", alt: "Service Pacemaker – die After-Sales-Plattform für den Maschinenbau" },
+  logoPng: "/logo-512.png", // für die strukturierten Daten (Google)
+  foundingYear: "2006",
+  // Beschreibung des Produkts für die strukturierten Daten (Google)
+  productDescription: "After-Sales-Plattform und Kundenportal für den Maschinenbau: Dokumentation mit KI-Assistent, Serviceanfragen mit Ticketsystem, Wartung, Ersatzteile, IoT-Integration und Reporting rund um jede installierte Maschine.",
+};
+
+// Fehlerseite (404), wenn eine Adresse nicht existiert
+export const notFoundPage = {
+  title: "Diese Seite gibt es nicht.",
+  lead: "Vielleicht hat sich die Adresse geändert, oder der Link ist veraltet. Hier geht es weiter:",
+  links: [
+    { href: "/", label: "Zur Startseite" },
+    { href: "/funktionen/", label: "Alle Funktionen" },
+    { href: "/kontakt/", label: "Kontakt und Demo" },
+  ],
 };
 
 export const navigation: NavSection[] = [

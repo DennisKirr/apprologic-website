@@ -1,8 +1,9 @@
 ---
 title: "Ihr Service wird zur Plattform: für Kunden, Partner und Ihr eigenes Team."
+seoTitle: "Serviceportal für Maschinenbauer"
 description: "Service Pacemaker für Hersteller: weniger Anfragen, Transparenz über die installierte Basis, ein Kanal zu Partnern und mehr Ersatzteilumsatz."
 eyebrow: "Für Hersteller"
-lead: "Sie bauen komplexe Maschinen und verkaufen sie weltweit, oft über Händler. Der Service entscheidet darüber, ob der Kunde wieder bei Ihnen kauft, und er ist ein Geschäft für sich: Ersatzteile, Wartungsverträge, Schulungen. Der Service Pacemaker gibt Ihnen die Plattform, um dieses Geschäft zu strukturieren."
+lead: "Sie bauen komplexe Maschinen und verkaufen sie weltweit, oft über Händler. Der Service entscheidet darüber, ob der Kunde wieder bei Ihnen kauft, und er ist ein Geschäft für sich: Ersatzteile, Wartungsverträge, Schulungen. Der Service Pacemaker gibt Ihnen die Plattform, um dieses Geschäft zu strukturieren: mit einem Serviceportal für Ihre Kunden, Händler und Techniker."
 section: "fuer-wen"
 breadcrumbs: [{ label: "Für wen", href: "/fuer-wen/" }, { label: "Für Hersteller", href: "" }]
 ---

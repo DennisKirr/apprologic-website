@@ -1,5 +1,6 @@
 ---
 title: "Ein Klick auf den Aktivierungslink, und Ihr Kunde ist drin."
+seoTitle: "Kundenportal-Onboarding per Einladung"
 description: "Onboarding im Service Pacemaker: Einladung per E-Mail, ein Klick auf den Aktivierungslink, und der Kunde ist im Portal. Kollegen lädt er selbst ein."
 eyebrow: "Onboarding und Registrierung"
 lead: "Ein Serviceportal bringt erst dann etwas, wenn Ihre Kunden es nutzen. Jede Hürde beim Einstieg kostet Nutzer: ein langes Formular, eine Rückfrage, ein Freigabeprozess. Beim Service Pacemaker gibt es diese Hürden nicht. Ihr Kunde bekommt eine Einladung, klickt auf den Aktivierungslink und ist im Portal."

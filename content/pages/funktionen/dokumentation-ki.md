@@ -1,5 +1,6 @@
 ---
 title: "Die richtige Antwort in Sekunden, aus Ihrer eigenen Dokumentation, mit Quellenangabe."
+seoTitle: "Technische Dokumentation mit KI-Assistent"
 description: "Dokumentation je Maschine und KI-Assistent mit Quellenangabe: Antworten aus Ihren eigenen Handbüchern, Schaltplänen und Fehlerbäumen, in Sekunden."
 eyebrow: "Dokumentation und KI-Assistent"
 lead: "Ein Techniker steht an der Maschine und braucht den Schaltplan für genau diese Baureihe ab Baujahr 2020. Er findet drei Versionen auf zwei Laufwerken. Jede Minute Suche ist eine Minute Stillstand. Im Service Pacemaker hat er das richtige Dokument in Sekunden, oder er fragt einfach die KI."

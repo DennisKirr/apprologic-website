@@ -1,5 +1,6 @@
 ---
 title: "Ihr Partnernetz arbeitet im selben Portal wie Ihr Team."
+seoTitle: "Portal für Händler und Servicepartner"
 description: "Händler und Servicepartner arbeiten im selben Portal wie Ihr Serviceteam: Dokumentation, Anfragen, Checklisten und Teilebestellung für die betreuten Maschinen."
 eyebrow: "Für Händler und Servicepartner"
 lead: "Ihre Händler und Servicepartner stehen zwischen Ihnen und Ihren Kunden. Damit sie gute Arbeit leisten, brauchen sie die aktuelle Dokumentation, die richtige Teilenummer und einen kurzen Draht in Ihren Service, für jede Maschine, die sie betreuen. Mit dem Service Pacemaker stellen Sie ihnen genau das bereit, im Browser und als App."
